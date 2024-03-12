@@ -1,33 +1,77 @@
-body {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    align-items: center;
-    position: relative;
-}
 p {
     text-align: center;
     color: aliceblue;
+  }
+ul{
+  color: aliceblue;
+  text-align: left;
+  align-items: center;
+  font-size: large;
 }
-div{
+body {
+  background: #000000;
+  align-items: center;
+  position: relative;
+  }
+header {
+  background-color: #00000000;
+  margin: 0%;
+  width: 100%;
+  height: 15%;
+  position: absolute;
+}
+header p {
+  font-size: xx-large;
+  animation: degrade 2s linear alternate;
+}
+h1{
+  font-size: xxx-large;
+  height: 50%;
+  text-align: center;
+  color: white;
+  margin: 0%;
+  animation: degrade 2s linear alternate;
+}
+h2{
+  color: white;
+  animation: degrade 2s linear alternate;
+}
+.reglas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+}
+.reglas ul{
+  animation: degrade 2s linear alternate;
+}
+.reglas p{
+  animation: degrade 2s linear alternate;
+}
+
+  .boton div{
+    z-index: 1;
     display: flex;
     flex-direction: column;
     width: 17% ;
     position: absolute;
-    top: 50%;
+    top: 75%;
     right: 50%;
-    transform: translate(50%, 200%);
-}
+    transform: translate(50%, 0%);
+  }
 .comic-button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: #fff;
-    background-color: #ff5252;
-    border: 2px solid #000;
+    color: #000000;
+    background-color: #52ff5b;
+    border: 2px solid #00000000;
     border-radius: 10px;
     box-shadow: 5px 5px 0px #000;
     transition: all 0.3s ease;
@@ -35,10 +79,10 @@ div{
   }
   
   .comic-button:hover {
-    background-color: #fff;
-    color: #ff5252;
-    border: 2px solid #ff5252;
-    box-shadow: 5px 5px 0px #ff5252;
+    background-color: #00000000;
+    color: #52ff5b;
+    border: 2px solid #52ff5b;
+    box-shadow: 5px 5px 0px #52ff5b;
   }
   
   .comic-button:active {
@@ -46,4 +90,86 @@ div{
     box-shadow: none;
     transform: translateY(4px);
   }
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+  }
+
+.burbujas {
+    z-index: -1;
+    position: relative;
+    bottom: 6%;
+    display: flex;
+    justify-content: space-around;
+  }
   
+.burbujas span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #aa43d3;
+    margin: 0 4px;
+    transform: rotate(45deg) skew(10deg, 10deg);
+    box-shadow: 0 0 0 10px #7117bb,
+    0 0 50px #f700ff,
+    0 0 100px #f700ff;
+    animation: animacion 15s linear infinite; 
+    animation-duration: calc(125s / var(--i));
+  }
+
+  .burbujas span:nth-child(even) {
+    transform: rotate(45deg) skew(10deg, 10deg);
+    background: #78cdff;
+    box-shadow: 0 0 0 10px #00c3ff,
+    0 0 50px #14cefc,
+    0 0 100px #14b2fc;
+  }
+
+@keyframes degrade {
+  0%{
+    color: black;
+  }
+  100%{
+    color: white;
+  }
+}
+
+@keyframes animacion {
+   0% {
+    transform: translateY(100vh) scale(0) rotate(45deg) skew(10deg, 10deg);
+   }
+   100%{
+    transform: translateY(-10vh) scale(1) rotate(45deg) skew(10deg, 10deg);
+   }
+  }
+footer{
+    width: 100%;
+    height: 28px;
+    position: absolute;
+    bottom: 0px;
+}
+footer p {
+  display: inline;
+  position: absolute;
+  top: 10px;
+  animation: degrade 2s linear alternate;
+}
+  .sonidoDiv{
+  text-align: end;
+  }
+  .sonido {
+    font-size: -webkit-xxx-large;
+    color: white;
+    animation: degrade 2s linear alternate;
+    cursor: pointer;
+  }
+.sonido:hover {
+  color: #14b2fc;
+}
+.sonido:active {
+  color: #7117bb;
+  transform: translateY(4px);
+}

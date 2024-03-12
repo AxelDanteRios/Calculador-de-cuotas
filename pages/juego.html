@@ -4,47 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senku</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<header>
-    <h1>SENKU</h1>
-    <p>"Un juego de ingenio"</p>
-</header>
-        <div class="reglas">
-            <h2>Reglas</h2>
-            <ul>
-                <li>Los movimientos permitidos son en horizontal y en vertical, 
-                    saltando por sobre un boton a un agujero libre eliminando asi el boton saltado</li>
-                <li>Saltos en diagonal o movimientos sin saltar por sobre un boton no estan permitidos.</li>
-            </ul>
-            <p> El objetivo de este juego es eliminar tantons botones como sea posible 
-                y el resultado perfecto es quedarse con un solo boton y que este termine 
-                en el agujero que quedo libre al comenzar el juego <br>
-            </p>
-            <ul>
-                <li>
-                    Si le quedan 5 botones : Bien
-                </li>
-                <li>
-                    Si le quedan 4 botones : Mejor
-                </li>
-                <li>
-                    Si le quedan 3 botones : Muy Bien
-                </li>
-                <li>
-                    Si le quedan 2 botones : Excelente
-                </li>
-                <li>
-                    Si le queda 1 boton : Respire hondo
-                </li>
-            </ul>
-        </div>
-    <section class="boton">
-    <div>
-        <a href="./pages/juego.html" <button class="comic-button"></button>Jugar</a>
-    </div>
-    </section>
     <div class="container">
         <div class="burbujas">
             <span style="--i:11;"></span>
@@ -78,5 +40,8 @@
 </footer>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="../jugador.js"></script>
+<script src="../senku.js"></script>
+<script src="../main.js"></script>
 </body>
 </html>
