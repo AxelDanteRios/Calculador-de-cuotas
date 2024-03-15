@@ -18,28 +18,53 @@ while (true) {
 
 if (opciones == 2){
 
-        let categorias = prompt("Que desea comprar?", "Higiene,ropa,comida")
+        let categorias = prompt("Que desea comprar?", "Higiene,ropa,comida").toLocaleLowerCase()
         if (categorias == "higiene"){
-             let hig_lista = lista_higiene.map( (lista_higiene) => lista_higiene.producto + " " + "$" + lista_higiene.precio );
-             let meter_lista = prompt ((hig_lista.join('\n')))
+            let seguir_comprando = confirm("por favor agregue de a un producto ")
+            while (seguir_comprando == true){
+             let hig_lista = lista_higiene.map((elm) => elm.producto + " " + "$" + elm.precio );
+             let meter_lista = ( prompt ((hig_lista.join('\n'))))
+             if (lista_higiene.some ((elm) => elm.producto.toLocaleLowerCase() == meter_lista)){
             lista.push(meter_lista)
+            }
+            else{
+                alert ("no tenemos ese")
+            }
+            seguir_comprando = confirm("Desea seguir comprando?")
+        }
         }
         else if (categorias == "ropa"){
-            let rop_lista = lista_ropa.map( (lista_ropa) => lista_ropa.producto + " " + "$" + lista_ropa.precio );
+            let seguir_comprando = confirm("por favor agregue de a un producto ")
+            while (seguir_comprando == true){
+            let rop_lista = lista_ropa.map( (elm) => elm.producto + " " + "$" + elm.precio );
             let meter_lista = prompt ((rop_lista.join('\n')))
-            lista.push(meter_lista)
+            if (lista_ropa.some ((elm) => elm.producto == meter_lista)){
+                lista.push(meter_lista)
+                }
+                else{
+                    alert ("no tenemos ese")
+                }
+                seguir_comprando = confirm("Desea seguir comprando?")
+            }
         }
         else if (categorias == "comida"){
-            let com_lista = lista_comida.map( (lista_comida) => lista_comida.producto + " " + "$" + lista_comida.precio );
+            let seguir_comprando = confirm("por favor agregue de a un producto ")
+            while (seguir_comprando == true){
+            let com_lista = lista_comida.map( (elm) => elm.producto + " " + "$" + elm.precio );
             let meter_lista = prompt ((com_lista.join('\n')))
-            lista.push(meter_lista)
+            if (lista_comida.some ((elm) => elm.producto == meter_lista)){
+                lista.push(meter_lista)
+                }
+                else{
+                    alert ("no tenemos ese")
+                }
+                seguir_comprando = confirm("Desea seguir comprando?")
+            }
         }
         else{
             alert ("no tenemos esa categoria")
             break;
         }
-
-
 
 
 
@@ -127,7 +152,7 @@ if (opciones == 3){
         alert("este producto no esta en la lista")
        }
     }
-} 
+}
 
     function pedir_num (str,max){
         let num = Number(prompt(str))
@@ -137,69 +162,3 @@ if (opciones == 3){
         }
         return num
     }
-
-
-// function suma(){
-//     let precio_total = this.precio + this.precio
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    // if (opciones == 2 && juego.jugador_actual !=undefined) {
-    //     let jugada_jugador = pedir_num("ingrese \n1. para piedra \n2. para papel \n3. para tijera",3)
-    //     let jugada_maquina = rand_juego()
-
-    //     let resultado = juego.analizar_jugada( jugada_jugador, jugada_maquina)
-
-    //     if (resultado == -1) {
-    //         alert(juego.jugador_actual + "perdiste, la maquina saco" + juego.opciones [jugada_jugador_maquina])
-    //         juego.jugador_actual.perdidas++
-    //         juego.jugador_actual.max_score = 0
-    //     }else if (resultado == 1){
-    //         alert(juego.jugador_actual + "ganaste")
-    //         juego.jugador_actual.ganadas++
-    //         juego.jugador_actual.max_score ++
-    //     }else{
-    //         alert(juego.jugador_actual + "empataste")
-    //     }
-    // }  
-
-    // // Condicional + confirm para sacar al usuario del bucle
-    // if (confirm('Desea salir del juego?')) {
-
-    //     break
-    // }
-
-
-
-
-
-
-
-
-
-

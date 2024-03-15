@@ -51,8 +51,8 @@ let lista_ropa = [
 
 class Comida {
     constructor(producto, precio ){
-        this.producto = producto;
-        this.precio = precio;
+        this.producto = producto
+        this.precio = precio
     }
 }
 
@@ -68,28 +68,3 @@ let lista_comida = [
 
 
 let lista = []
-
-function suma_de_lista(){
-let suma = 0
-for(let i = 0 ; i < lista.length; i++){
-    suma += lista.precio[i];
-}
-alert(suma);
-}
-     
-//     enlistar() {
-//         // Primero ordenamos segun el que tenga mayores partidas ganadas
-//         // Como ordenariamos un array de objetos 🤔
-
-//         // Armamos la lista de jugadores
-//         let lista = ''
-//         // Podemos iterar sobre el array y tener un contador a la vez
-//         // si a la arrow fn del forEach le pasamos dos param
-//         this.jugadores.forEach((jugador, num)=> {
-//             lista += num + ' - ' + jugador.nombre + ' - ' + jugador.max_score + ' pts'
-//         })
-
-
-//         // Mostramos la lista de jugadores
-//         alert(lista)
-//     }
