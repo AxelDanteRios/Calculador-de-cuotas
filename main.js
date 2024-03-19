@@ -140,10 +140,11 @@ if (opciones == 0) {
 if (opciones == 3){
         let lista_final = lista.map((elm) => elm.producto + " " + "$" + elm.precio );
         alert((lista_final.join('\n')))
-       
+    //    profe utilize el metodo includes y funcionaba cuando eran strings y ahora no funciona 
+    //    por eso utilize el metodo find pero como vera elimina el ultimo objeto y no el que yo le escribo y ademas me dice [object object]
        confirm("desea sacar algun producto de la lista?")
        let producto_eliminado = prompt ("ingrese el nombre del producto a eliminar")
-    if (lista.includes(producto_eliminado)){
+        if (lista.find((elm) => elm.producto.toLowerCase() == producto_eliminado)){
        let numero_producto = (lista.indexOf(producto_eliminado))
        alert(lista.splice(numero_producto , 1) + " ha sido eliminado")
        }
@@ -165,3 +166,4 @@ if (opciones == 3){
                 let total_carrito = lista.reduce((acc, elm ) => acc + elm.precio, 0)
                 return total_carrito
                 }
+    
