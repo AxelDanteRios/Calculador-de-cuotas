@@ -31,7 +31,7 @@ let lista_higiene = [
     new Higiene ("pasta dental", 2000),
     new Higiene ("papel higienico",3000)
 ]
-
+localStorage.setItem("lista_higiene", JSON.stringify(lista_higiene))
 class Ropa {
     constructor(producto, precio ){
         this.producto = producto;
@@ -48,7 +48,7 @@ let lista_ropa = [
     new Ropa ("zapatillas",30000)
 ]
 
-
+localStorage.setItem("lista_ropa", JSON.stringify(lista_ropa))
 class Comida {
     constructor(producto, precio ){
         this.producto = producto
@@ -66,7 +66,12 @@ let lista_comida = [
     new Comida ("choripan",2000)
 ]
 
+localStorage.setItem("lista_comida", JSON.stringify(lista_comida))
 
+class Ada {
+    constructor(producto, precio ){
+        this.producto = producto
+        this.precio = precio
+    }
+}
 let lista = []
-
-

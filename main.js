@@ -1,9 +1,78 @@
-
 let cliente = new Cliente ()
+let lista_para_comprar = document.querySelector(".productos_a_enlistar")
+
+lista_higiene.forEach((elm)=> {
+   let btn = document.createElement('button')
+   btn.innerText = `${elm.producto}`
+   lista_para_comprar.append(btn)
+
+   btn.addEventListener('click',()=>{
+    lista.push(`${elm.producto} : ${elm.precio}`)
+    let section = document.getElementById ("secti")
+    let div_pro = section.getElementsByClassName("prod")
+    div_pro[0].innerText = lista[0]
+    div_pro[1].innerText = lista[1]
+    div_pro[2].innerText = lista[2]
+   })
+   
+});
+
+
+
+
+lista_ropa.forEach((elm)=> {
+    let btn = document.createElement('button')
+    btn.innerText = `${elm.producto}`
+    lista_para_comprar.append(btn)
+ 
+    btn.addEventListener('click',()=>{
+        lista.push(`${elm.producto} : ${elm.precio}`)
+        let section = document.getElementById ("secti")
+        let div_pro = section.getElementsByClassName("prod")
+        div_pro[0].innerText = lista[0]
+        div_pro[1].innerText = lista[1]
+        div_pro[2].innerText = lista[2]
+       })
+ });
+
+
+
+
+ lista_comida.forEach((elm)=> {
+    let btn = document.createElement('button')
+    btn.innerText = `${elm.producto}`
+    lista_para_comprar.append(btn)
+ 
+    btn.addEventListener('click',()=>{
+        lista.push(`${elm.producto} : ${elm.precio}`)
+        let section = document.getElementById ("secti")
+        let div_pro = section.getElementsByClassName("prod")
+        div_pro[0].innerText = lista[0]
+        div_pro[1].innerText = lista[1]
+        div_pro[2].innerText = lista[2]
+       })    
+
+ });
+
+
+ 
+let product = Number (suma_total())
+let bot = document.querySelector('.asd')
+bot.addEventListener('click',()=>{
+ document.querySelector(".total").innerText = product
+})
+
+
+let btn__ingreso = document.querySelector("#ingreso")
+btn__ingreso.addEventListener('click',()=>{
+    
+   })
+
+
 
 while (true) {
     let opciones = pedir_num ("Bienvenido \n1. Registrarse \n2. Comprar \n3. Lista \n0. Salir",3)
-
+ 
     if (opciones == 1){
         let nombre = prompt("ingrese su nombre de usuario")
         let logeo_comprador = cliente.compradores.find ((elm)=> elm.nombre == nombre)
@@ -18,61 +87,61 @@ while (true) {
 
 if (opciones == 2){
 
-        let categorias = prompt("Que desea comprar?", "Higiene,ropa,comida").toLocaleLowerCase()
-       
-        if (categorias == "higiene"){
-            let seguir_comprando = confirm("por favor agregue de a un producto ")
-            while (seguir_comprando == true){
-             let hig_lista = lista_higiene.map((elm) => elm.producto + " " + "$" + elm.precio );
-             let meter_lista = prompt  ((hig_lista.join('\n')))
-             let resultado = lista_higiene.find((elm) => elm.producto.toLocaleLowerCase() == meter_lista)
-             if (lista_higiene.some ((elm) => elm.producto == meter_lista)){
-             lista.push((resultado))
-            }
-            else{
-                alert ("no tenemos ese producto")
-            }
-            seguir_comprando = confirm("Desea seguir comprando?")
-        }
-        }
-        else if (categorias == "ropa"){
-            let seguir_comprando = confirm("por favor agregue de a un producto ")
-            while (seguir_comprando == true){
-            let rop_lista = lista_ropa.map( (elm) => elm.producto + " " + "$" + elm.precio );
-            let meter_lista = prompt ((rop_lista.join('\n')))
-            let resultado = lista_ropa.find((elm) => elm.producto.toLocaleLowerCase() == meter_lista)
-             if (lista_ropa.some ((elm) => elm.producto == meter_lista)){
-             lista.push((resultado))
-            }
-                else{
-                    alert ("no tenemos ese")
-                }
-                seguir_comprando = confirm("Desea seguir comprando?")
-            }
-        }
-        else if (categorias == "comida"){
-            let seguir_comprando = confirm("por favor agregue de a un producto ")
-            while (seguir_comprando == true){
-            let com_lista = lista_comida.map( (elm) => elm.producto + " " + "$" + elm.precio );
-            let meter_lista = prompt ((com_lista.join('\n')))
-            let resultado = lista_comida.find((elm) => elm.producto.toLocaleLowerCase() == meter_lista)
-             if (lista_comida.some ((elm) => elm.producto == meter_lista)){
-             lista.push((resultado))
-            }
+        // let categorias = prompt("Que desea comprar?", "Higiene,ropa,comida").toLocaleLowerCase()
+        // if (categorias == "higiene"){
+        //     let seguir_comprando = confirm("por favor agregue de a un producto ")
+        //     while (seguir_comprando == true){
+        //      let hig_lista = lista_higiene.map((elm) => elm.producto + " " + "$" + elm.precio );
+        //      let meter_lista = prompt  ((hig_lista.join('\n')))
+        //      let resultado = lista_higiene.find((elm) => elm.producto.toLocaleLowerCase() == meter_lista)
+        //      if (lista_higiene.some ((elm) => elm.producto == meter_lista)){
+        //      lista.push((resultado))
+        //     }
+        //     else{
+        //         alert ("no tenemos ese producto")
+        //     }
+        //     seguir_comprando = confirm("Desea seguir comprando?")
+        // }
+        // }
+        // else if (categorias == "ropa"){
+        //     let seguir_comprando = confirm("por favor agregue de a un producto ")
+        //     while (seguir_comprando == true){
+        //     let rop_lista = lista_ropa.map( (elm) => elm.producto + " " + "$" + elm.precio );
+        //     let meter_lista = prompt ((rop_lista.join('\n')))
+        //     let resultado = lista_ropa.find((elm) => elm.producto.toLocaleLowerCase() == meter_lista)
+        //      if (lista_ropa.some ((elm) => elm.producto == meter_lista)){
+        //      lista.push((resultado))
+        //     }
+        //         else{
+        //             alert ("no tenemos ese")
+        //         }
+        //         seguir_comprando = confirm("Desea seguir comprando?")
+        //     }
+        // }
+        // else if (categorias == "comida"){
+        //     let seguir_comprando = confirm("por favor agregue de a un producto ")
+        //     while (seguir_comprando == true){
+        //     let com_lista = lista_comida.map( (elm) => elm.producto + " " + "$" + elm.precio );
+        //     let meter_lista = prompt ((com_lista.join('\n')))
+        //     let resultado = lista_comida.find((elm) => elm.producto.toLocaleLowerCase() == meter_lista)
+        //      if (lista_comida.some ((elm) => elm.producto == meter_lista)){
+        //      lista.push((resultado))
+        //     }
             
-                else{
-                    alert ("no tenemos ese")
-                }
-                seguir_comprando = confirm("Desea seguir comprando?")
-            }
-        }
-        else{
-            alert ("no tenemos esa categoria")
-            break;
-        }
+        //         else{
+        //             alert ("no tenemos ese")
+        //         }
+        //         seguir_comprando = confirm("Desea seguir comprando?")
+        //     }
+        // }
+        // else{
+        //     alert ("no tenemos esa categoria")
+        //     break;
+        // }
 
         let product = Number (suma_total())
         let mostrar_total = alert ("total a pagar es " + product)
+       
         let descuento = product - (product*10/100)
 
         if (product >= 50000){
@@ -84,7 +153,7 @@ if (opciones == 2){
 
 
         let cuotas = Number (prompt("en cuantas cuotas desea pagar"))
-
+        document.querySelector(".total").innerText = "total " + product + " en " + cuotas + " cuotas de "+ product/cuotas
             if (cuotas == 3){
                 alert ("las cuotas son de " + product/3)
                 alert("Gracias por su compra")
@@ -109,7 +178,7 @@ if (opciones == 2){
 
 
         let cuotas = Number (prompt("en cuantas cuotas desea pagar"))
-
+        document.querySelector(".total").innerText = "total " + product + " en " + cuotas + " cuotas de "+ product/cuotas
             if (cuotas == 3){
                 alert ("las cuotas son de " + descuento/3)
                 alert("Gracias por su compra")
@@ -129,7 +198,9 @@ if (opciones == 2){
             } else {
                 alert("numero de cuotas no disponible por favor ingresa un multiplo de 3")
             }
+ 
         }
+   
     }
 
 if (opciones == 0) {
@@ -140,10 +211,8 @@ if (opciones == 0) {
 if (opciones == 3){
         let lista_final = lista.map((elm) => elm.producto + " " + "$" + elm.precio );
         alert((lista_final.join('\n')))
-    //    profe utilize el metodo includes y funcionaba cuando eran strings y ahora no funciona 
-    //    por eso utilize el metodo find pero como vera elimina el ultimo objeto y no el que yo le escribo y ademas me dice [object object]
        confirm("desea sacar algun producto de la lista?")
-       let producto_eliminado = prompt ("ingrese el nombre del producto a eliminar")
+       let producto_eliminado = (prompt ("ingrese el nombre del producto a eliminar"))
         if (lista.find((elm) => elm.producto.toLowerCase() == producto_eliminado)){
        let numero_producto = (lista.indexOf(producto_eliminado))
        alert(lista.splice(numero_producto , 1) + " ha sido eliminado")
@@ -151,8 +220,19 @@ if (opciones == 3){
        else{
         alert("este producto no esta en la lista")
        }
+       
     }
 }
+
+
+let h1 = document.querySelector("h1")
+h1.addEventListener('click',()=>{
+h1.style.color = `rgb(${rand()},${rand()},${rand()})`
+})
+
+    function rand(){
+        return Math.floor(Math.random() * 255)
+    }
 
     function pedir_num (str,max){
         let num = Number(prompt(str))
