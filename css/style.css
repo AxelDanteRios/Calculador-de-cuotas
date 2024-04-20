@@ -13,13 +13,16 @@ body {
   flex-direction: column;
   background: #000000;
   align-items: center;
-  position: relative;
+  /* position: relative; */
+  height: 98vh;
+  flex-wrap: nowrap;  
+  overflow: hidden;
   }
 header {
   background-color: #00000000;
   margin: 0%;
   width: 100%;
-  height: 15%;
+  height: 7%;
   position: absolute;
 }
 header p {
@@ -39,6 +42,10 @@ h2{
   color: white;
   animation: degrade 2s linear alternate;
 }
+.acceso{
+  position: fixed;
+  top: 19%;
+}
 .reglas{
     width: 100%;
     display: flex;
@@ -46,7 +53,7 @@ h2{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
+    top: 15%;
 }
 .reglas ul{
   animation: degrade 2s linear alternate;
@@ -61,7 +68,7 @@ h2{
     flex-direction: column;
     width: 17% ;
     position: absolute;
-    top: 75%;
+    top: 80%;
     right: 50%;
     transform: translate(50%, 0%);
   }
@@ -96,8 +103,7 @@ h2{
 
 .container {
     width: 100%;
-    height: 95vh;
-    overflow: hidden;
+    height: 94vh;
   }
 
 .burbujas {
@@ -149,19 +155,17 @@ h2{
   }
 footer{
     width: 100%;
-    height: 28px;
-    position: absolute;
-    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 footer p {
   display: inline;
-  position: absolute;
   top: 10px;
+  margin: 1%;
   animation: degrade 2s linear alternate;
 }
-  .sonidoDiv{
-  text-align: end;
-  }
+
   .sonido {
     font-size: -webkit-xxx-large;
     color: white;
@@ -183,48 +187,174 @@ footer p {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 80%;
+  top: 65%;
   border-style: solid ;
   border-color: #fcf414;
-  width: 25%;
+  width: 65%;
+  height: 18%;
+}
+table tr th{
+  border: 3px solid #fcf414;
+  width: 1%;
+  height: 35.5px;
+  color: whitesmoke;
+}
+.lista_num th{
+  height: 38px;
 }
 
-
-.prod{
-  color: white;
-}
 .total{
   color: #fcf414;
 }
 
-.asd{
-  height: 11%;
-  width: 22%;
-  top: 65%;
+.tirar{
+  top: 50%;
   position: sticky;
+  font-size:23px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#000000;
+  border-color:#78cdff;
+  font-weight:bold;
+  border-top-left-radius:8px;
+  border-top-right-radius:8px;
+  border-bottom-left-radius:8px;
+  border-bottom-right-radius:8px;
+  box-shadow: 0px 7px 30px 1px #78cdff;;
+  text-shadow: 0px 1px 0px #78cdff;;
+  background:linear-gradient(#78cdff, #78cdff);
 }
-
-.productos_a_enlistar{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  border-style: solid ;
-  border-color: #fcf414;
-  width: 70%;
-  position: absolute;
-  top: 30%;
-  height: 30%;
-}
-
-.productos_a_enlistar button{
-  height: 16%;
-  width: 17%;
+.tirar:hover {
+  background: linear-gradient(#71becc, #7abcd4);
 }
 
 form{
   position: sticky;
   top: 15%;
   color: aliceblue;
+}
+
+
+.dados{
+  width: 90%;
+  height: 20%;
+  position: absolute;
+  top: 25%;
+}
+.dados_div{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dados_div div{
+  border: 3px solid yellow;
+  width: 14%;
+  color: whitesmoke;
+  font-size: 16vh;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+::selection {
+  background-color: gray;
+}
+
+.boton_usuario {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+}
+
+.form {
+  width: 235px;
+  height: 93px;
+  background-image: linear-gradient(to bottom, #424242, #0000);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.form label {
+  color: #f4f5f8;
+  margin: 7px 0px 0px 0px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.input {
+  margin: 0.5rem 0;
+  padding: 1rem 0.5rem;
+  width: 20rem;
+  background-color: inherit;
+  color: #f4f5f8;
+  border: none;
+  outline: none;
+}
+
+.username {
+  border-bottom: 1px solid #f4f5f8;
+  transition: all 400ms;
+  width: 70%;
+  margin: 0%;
+}
+
+.username:hover {
+  background-color: #424242;
+  border: none;
+  border-radius: 0.5rem;
+}
+.btn {
+  height: 2rem;
+  width: 9rem;
+  margin-top: 4px;
+  background-color: #f4f5f8;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  transition: all 400ms;
+  box-shadow: 0 0 3px  #f4f5f8, 0 0 3px #f4f5f8;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #f4f5f8;
+  box-shadow: none;
+}
+.ronda{
+    position: relative;
+    top: 53%;
+    margin: 0%;
+}
+.uno{
+  cursor: pointer;
+}
+.dos{
+  cursor: pointer;
+}
+.tres{
+  cursor: pointer;
+}
+.cuatro{
+  cursor: pointer;
+}
+.cinco{
+  cursor: pointer;
+}
+
+.terminar_turno{
+  position: relative;
+  top: 6%;
 }

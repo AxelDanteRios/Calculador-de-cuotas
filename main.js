@@ -1,228 +1,232 @@
-let cliente = new Cliente ()
-let lista_para_comprar = document.querySelector(".productos_a_enlistar")
+let play = new Juego ()
 
-lista_higiene.forEach((elm)=> {
-   let btn = document.createElement('button')
-   btn.innerText = `${elm.producto}`
-   lista_para_comprar.append(btn)
+let btn_usuario = document.querySelector(".btn");
+let user = document.querySelector("label");
+let formulario = document.querySelector(".form");
+let dado_uno = document.querySelector(".uno");
+let dado_dos = document.querySelector(".dos");
+let dado_tres = document.querySelector(".tres");
+let dado_cuatro = document.querySelector(".cuatro");
+let dado_cinco = document.querySelector(".cinco");
+let btn_tirar = document.querySelector(".tirar");
+let btn_turno = document.querySelector(".terminar_turno");
+let j_uno = document.querySelector(".jugador_uno");
+let j_dos = document.querySelector(".jugador_dos");
+let tabla_uno = document.querySelector(".tabla_j_uno");
+let tabla_dos = document.querySelector(".tabla_j_dos");
+let rondas = document.querySelector(".ronda");
+const max_rondas = 3;
+let contador_ronda = 0;
+let cont_usuario = 0
+btn_turno.style.display = "none"
+agregar_jugador()
 
-   btn.addEventListener('click',()=>{
-    lista.push(`${elm.producto} : ${elm.precio}`)
-    let section = document.getElementById ("secti")
-    let div_pro = section.getElementsByClassName("prod")
-    div_pro[0].innerText = lista[0]
-    div_pro[1].innerText = lista[1]
-    div_pro[2].innerText = lista[2]
-   })
-   
-});
+// aca arranca el juego cuando ingresas dos nombres 
+btn_usuario.addEventListener('click',()=>{
 
+    cont_usuario ++
+    if (cont_usuario == 2){
+        formulario.style.display = "none"
+        btn_turno.style.display = "block"
+    }
+  
+btn_tirar.addEventListener('click',sumar_ronda)
+btn_tirar.addEventListener('click',()=>{
 
-
-
-lista_ropa.forEach((elm)=> {
-    let btn = document.createElement('button')
-    btn.innerText = `${elm.producto}`
-    lista_para_comprar.append(btn)
- 
-    btn.addEventListener('click',()=>{
-        lista.push(`${elm.producto} : ${elm.precio}`)
-        let section = document.getElementById ("secti")
-        let div_pro = section.getElementsByClassName("prod")
-        div_pro[0].innerText = lista[0]
-        div_pro[1].innerText = lista[1]
-        div_pro[2].innerText = lista[2]
-       })
- });
-
-
-
-
- lista_comida.forEach((elm)=> {
-    let btn = document.createElement('button')
-    btn.innerText = `${elm.producto}`
-    lista_para_comprar.append(btn)
- 
-    btn.addEventListener('click',()=>{
-        lista.push(`${elm.producto} : ${elm.precio}`)
-        let section = document.getElementById ("secti")
-        let div_pro = section.getElementsByClassName("prod")
-        div_pro[0].innerText = lista[0]
-        div_pro[1].innerText = lista[1]
-        div_pro[2].innerText = lista[2]
-       })    
-
- });
-
-
- 
-let product = Number (suma_total())
-let bot = document.querySelector('.asd')
-bot.addEventListener('click',()=>{
- document.querySelector(".total").innerText = product
+    let num_dado_uno = rand_dado()
+    let num_dado_dos = rand_dado()
+    let num_dado_tres = rand_dado()
+    let num_dado_cuatro = rand_dado()
+    let num_dado_cinco = rand_dado()
+    if (dado_uno.style.color == "red"){
+        dado_uno 
+    }
+    else{
+    dado_uno.innerText = num_dado_uno
+    }
+    if (dado_dos.style.color == "red"){
+        dado_dos 
+    }
+    else{
+    dado_dos.innerText = num_dado_dos
+    }
+    if (dado_tres.style.color == "red"){
+        dado_tres
+    }
+    else{
+    dado_tres.innerText = num_dado_tres
+    }
+    if (dado_cuatro.style.color == "red"){
+        dado_cuatro 
+    }
+    else{
+    dado_cuatro.innerText = num_dado_cuatro
+    }
+    if (dado_cinco.style.color == "red"){
+        dado_cinco
+    }
+    else{
+    dado_cinco.innerText = num_dado_cinco
+    }
+    })
 })
 
 
-let btn__ingreso = document.querySelector("#ingreso")
-btn__ingreso.addEventListener('click',()=>{
-    
-   })
+
+blok(dado_uno)
+blok(dado_dos)
+blok(dado_tres)
+blok(dado_cuatro)
+blok(dado_cinco)
 
 
-
-while (true) {
-    let opciones = pedir_num ("Bienvenido \n1. Registrarse \n2. Comprar \n3. Lista \n0. Salir",3)
- 
-    if (opciones == 1){
-        let nombre = prompt("ingrese su nombre de usuario")
-        let logeo_comprador = cliente.compradores.find ((elm)=> elm.nombre == nombre)
-        cliente.comprador_actual = Comprador
-        if (logeo_comprador == undefined){
-            if (confirm("el usuario " + nombre + " no existe, ¿desea registrarse?")){
-                cliente.agregar_comprador()
-                cliente.comprador_actual = Comprador
-            }
-        }
-    }
-
-if (opciones == 2){
-
-        // let categorias = prompt("Que desea comprar?", "Higiene,ropa,comida").toLocaleLowerCase()
-        // if (categorias == "higiene"){
-        //     let seguir_comprando = confirm("por favor agregue de a un producto ")
-        //     while (seguir_comprando == true){
-        //      let hig_lista = lista_higiene.map((elm) => elm.producto + " " + "$" + elm.precio );
-        //      let meter_lista = prompt  ((hig_lista.join('\n')))
-        //      let resultado = lista_higiene.find((elm) => elm.producto.toLocaleLowerCase() == meter_lista)
-        //      if (lista_higiene.some ((elm) => elm.producto == meter_lista)){
-        //      lista.push((resultado))
-        //     }
-        //     else{
-        //         alert ("no tenemos ese producto")
-        //     }
-        //     seguir_comprando = confirm("Desea seguir comprando?")
-        // }
-        // }
-        // else if (categorias == "ropa"){
-        //     let seguir_comprando = confirm("por favor agregue de a un producto ")
-        //     while (seguir_comprando == true){
-        //     let rop_lista = lista_ropa.map( (elm) => elm.producto + " " + "$" + elm.precio );
-        //     let meter_lista = prompt ((rop_lista.join('\n')))
-        //     let resultado = lista_ropa.find((elm) => elm.producto.toLocaleLowerCase() == meter_lista)
-        //      if (lista_ropa.some ((elm) => elm.producto == meter_lista)){
-        //      lista.push((resultado))
-        //     }
-        //         else{
-        //             alert ("no tenemos ese")
-        //         }
-        //         seguir_comprando = confirm("Desea seguir comprando?")
-        //     }
-        // }
-        // else if (categorias == "comida"){
-        //     let seguir_comprando = confirm("por favor agregue de a un producto ")
-        //     while (seguir_comprando == true){
-        //     let com_lista = lista_comida.map( (elm) => elm.producto + " " + "$" + elm.precio );
-        //     let meter_lista = prompt ((com_lista.join('\n')))
-        //     let resultado = lista_comida.find((elm) => elm.producto.toLocaleLowerCase() == meter_lista)
-        //      if (lista_comida.some ((elm) => elm.producto == meter_lista)){
-        //      lista.push((resultado))
-        //     }
-            
-        //         else{
-        //             alert ("no tenemos ese")
-        //         }
-        //         seguir_comprando = confirm("Desea seguir comprando?")
-        //     }
-        // }
-        // else{
-        //     alert ("no tenemos esa categoria")
-        //     break;
-        // }
-
-        let product = Number (suma_total())
-        let mostrar_total = alert ("total a pagar es " + product)
-       
-        let descuento = product - (product*10/100)
-
-        if (product >= 50000){
-                alert("su compra supera los 50.000 tiene un 10% de descuento, el valor final del producto queda en " + descuento)
-            }
-
-
-        while ((product > 1) && (product < 50000)){
-
-
-        let cuotas = Number (prompt("en cuantas cuotas desea pagar"))
-        document.querySelector(".total").innerText = "total " + product + " en " + cuotas + " cuotas de "+ product/cuotas
-            if (cuotas == 3){
-                alert ("las cuotas son de " + product/3)
-                alert("Gracias por su compra")
-                break;
-            } else if (cuotas == 6){
-                alert ("las cuotas son de " + product/6)
-                alert("Gracias por su compra")
-                break;
-            } else if (cuotas == 9){
-                alert("las cuotas son de " + product/9)
-                alert("Gracias por su compra")
-                break;
-            } else if (cuotas == 12){
-                alert("las cuotas son de " + product/12)
-                alert("Gracias por su compra")
-                break;
-            } else {
-                alert("numero de cuotas no disponible por favor ingresa un multiplo de 3")
-            }
-        }
-        while (product >= 50000){
-
-
-        let cuotas = Number (prompt("en cuantas cuotas desea pagar"))
-        document.querySelector(".total").innerText = "total " + product + " en " + cuotas + " cuotas de "+ product/cuotas
-            if (cuotas == 3){
-                alert ("las cuotas son de " + descuento/3)
-                alert("Gracias por su compra")
-                break;
-            } else if (cuotas == 6){
-                alert ("las cuotas son de " + descuento/6)
-                alert("Gracias por su compra")
-                break;
-            } else if (cuotas == 9){
-                alert("las cuotas son de " + descuento/9)
-                alert("Gracias por su compra")
-                break;
-            } else if (cuotas == 12){
-                alert("las cuotas son de " + descuento/12)
-                alert("Gracias por su compra")
-                break;
-            } else {
-                alert("numero de cuotas no disponible por favor ingresa un multiplo de 3")
-            }
- 
-        }
-   
-    }
-
-if (opciones == 0) {
-     break
+function blok(dado){
+    dado.addEventListener('click',()=>{
+        dado.style.color = "red"
+        let conver = dado.textContent
+        combo.push(Number(conver))
+        
+    })
 }
 
-
-if (opciones == 3){
-        let lista_final = lista.map((elm) => elm.producto + " " + "$" + elm.precio );
-        alert((lista_final.join('\n')))
-       confirm("desea sacar algun producto de la lista?")
-       let producto_eliminado = (prompt ("ingrese el nombre del producto a eliminar"))
-        if (lista.find((elm) => elm.producto.toLowerCase() == producto_eliminado)){
-       let numero_producto = (lista.indexOf(producto_eliminado))
-       alert(lista.splice(numero_producto , 1) + " ha sido eliminado")
-       }
-       else{
-        alert("este producto no esta en la lista")
-       }
-       
+btn_turno.addEventListener('click',()=>{
+    btn_turno.innerText = "Jugador 2"
+    while(btn_turno = true){
+    let res = combo.map((elm)=> elm)
+console.log(res)
+res.sort()
+if((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[1] == res[4]) && (res[0] == "")){
+    alert("generala")
+    tabla_uno.children[10].innerText = "50"
+}
+else if((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[0] != undefined)){
+    alert("poker")
+    tabla_uno.children[9].innerText = "40"
+}
+else if((res[0] == res[1]) && (res[1]== res[2]) && (res[3] == res[4]) && (res[3] != undefined) || (res[0] == res[1]) && (res[2]== res[3]) && (res[3] == res[4]) && (res[3] != undefined)){
+    alert("tenes full")
+    tabla_uno.children[8].innerText = "30"
+}
+else if ((res[0] == 1) && (res[1] == 2) && (res[2] == 3) && (res[3] == 4) && (res[4] == 5)) {
+    alert("escalera")
+    tabla_uno.children[7].innerText = "20"
+}
+else if ((res[0] == 2) && (res[1] == 3) && (res[2] == 4) && (res[3] == 5) && (res[4] == 6)) {
+    alert("escalera")
+    tabla_uno.children[7].innerText = "20"
+}
+// suma de numeros para meter en la tabla
+else if ((res[0]) == res[1] && (res[1] == res[2])){
+    let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
+    if(total_turno == 15){
+        tabla_uno.children[5].innerText = "15"
+    }
+    else if (total_turno == 18){
+        tabla_uno.children[6].innerText = "18"
+    }
+    else if (total_turno == 12){
+        tabla_uno.children[4].innerText = "12"
+    }
+    else if (total_turno == 9){
+        tabla_uno.children[3].innerText = "9"
+    }
+    else if (total_turno == 6){
+        tabla_uno.children[2].innerText = "6"
+    }
+    else if (total_turno == 3){
+        tabla_uno.children[1].innerText = "3"
     }
 }
+    else if (res[0] == res[1]){
+        let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
+        if(total_turno == 10){
+            tabla_uno.children[5].innerText = "10"
+        }
+        else if (total_turno == 12){
+            tabla_uno.children[6].innerText = "12"
+        }
+        else if (total_turno == 8){
+            tabla_uno.children[4].innerText = "8"
+        }
+        else if (total_turno == 6){
+            tabla_uno.children[3].innerText = "6"
+        }
+        else if (total_turno == 4){
+            tabla_uno.children[2].innerText = "4"
+        }
+        else if (total_turno == 2){
+            tabla_uno.children[1].innerText = "2"
+        }
+    }
+    else if (res[0] == 1){
+        let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
+        if(total_turno == 5){
+            tabla_uno.children[5].innerText = "5"
+        }
+        else if (total_turno == 6){
+            tabla_uno.children[6].innerText = "6"
+        }
+        else if (total_turno == 4){
+            tabla_uno.children[4].innerText = "4"
+        }
+        else if (total_turno == 3){
+            tabla_uno.children[3].innerText = "3"
+        }
+        else if (total_turno == 2){
+            tabla_uno.children[2].innerText = "2"
+        }
+        else if (total_turno == 1){
+            tabla_uno.children[1].innerText = "1"
+        }
+    }
+
+    btn_turno.addEventListener('click',()=>{
+        btn_turno.innerText = "Terminar turno"
+        reset()
+        console.log ("arre")
+    })
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
+//     alert(total_turno)
+
+// alert("turno del jugador 2")
+
+
+
+
+
+
+
+
+
+
+
 
 
 let h1 = document.querySelector("h1")
@@ -234,16 +238,59 @@ h1.style.color = `rgb(${rand()},${rand()},${rand()})`
         return Math.floor(Math.random() * 255)
     }
 
-    function pedir_num (str,max){
-        let num = Number(prompt(str))
+    // function pedir_num (str,max){
+    //     let num = Number(prompt(str))
 
-        while (! Number.isInteger(num) || isNaN(num) || (num < 0 || num > max)){
-            num = Number(prompt(str))
-        }
-        return num
-    }
+    //     while (! Number.isInteger(num) || isNaN(num) || (num < 0 || num > max)){
+    //         num = Number(prompt(str))
+    //     }
+    //     return num
+    // }
     function suma_total(){
-                let total_carrito = lista.reduce((acc, elm ) => acc + elm.precio, 0)
-                return total_carrito
+                let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
+                return total_turno
                 }
     
+    function rand_dado(){
+        return Math.floor(Math.random()* 6) + 1
+    }
+    
+    function sumar_ronda(){
+ 
+    rondas.innerText= ++contador_ronda
+    if(contador_ronda == max_rondas){
+       contador_ronda = 0
+          }
+        if (contador_ronda == 1 ){
+        dado_uno.style.color = "white"
+        dado_dos.style.color = "white"
+        dado_tres.style.color = "white"
+        dado_cuatro.style.color = "white"
+        dado_cinco.style.color = "white" 
+        combo.length = 0;
+        }
+    }
+   
+function agregar_jugador() {
+formulario.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    let nombre = document.querySelector('#nombre').value 
+    document.querySelector('#nombre').value = " "
+    players.push(nombre)
+
+        j_uno.innerText = players[0]
+        j_dos.innerText = players[1]
+        
+    user.innerText = "Jugador 2"
+})
+}
+
+
+function reset () {
+    dado_uno.style.color = "white"
+    dado_dos.style.color = "white"
+    dado_tres.style.color = "white"
+    dado_cuatro.style.color = "white"
+    dado_cinco.style.color = "white" 
+    combo.length = 0;
+}

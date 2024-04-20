@@ -1,14 +1,14 @@
-class Comprador{
-    constructor(nombre,pass){
+class Jugadores{
+    constructor(nombre){
         this.nombre = nombre
-        this.pass = pass
-    }
-}   
 
-let usuario = [
+}}
 
-]
-localStorage.setItem("usuario", JSON.stringify(usuario))
+let players = []
+
+
+let combo = []
+// localStorage.setItem("usuario", JSON.stringify(usuario))
 
 
 

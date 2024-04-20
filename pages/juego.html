@@ -3,82 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senku</title>
+    <title>Generala</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-    <H1>Senku</H1>
+    <H1>Generala</H1>
     </header>
-    <form action="">
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre">
+    <div class="boton_usuario">
+        <form class="form" action="">
+            <label for="nombre">Jugador 1</label>
+            <input type="text" id="nombre" maxlength="6">
 
-        <label for="pass">Contraseña</label>
-        <input type="text" name="oass" id="pass">
+            <input class="btn" type="submit" value="Aceptar">
 
-        <input type="submit" value="ingresar" id="ingreso">
-    </form>
-    <section class="productos_a_enlistar">
-    </section>
-    <button class="asd">comprar</button>
+            
+            <!-- <label for="nombre">jugador 1</label>
+            <input placeholder="Nombre" class="username input" type="text">
+
+            <button class="btn" type="submit">Aceptar</button> -->
+        </form>
+    </div>
+<section class="dados">
+    <div class="dados_div">
+        <div class="uno"></div>
+        <div class="dos"></div>
+        <div class="tres"></div>
+        <div class="cuatro"></div>
+        <div class="cinco"></div>
+    </div>
+</section>
+    <button class="tirar">Tirar</button>
+    <button class="terminar_turno">Terminar turno</button>
+    <p class="ronda">Ronda</p>
     <section id="secti">
-            <p>Lista</p>
-            <div class="prod">producto1</div>
-            <div class="prod">producto2</div>
-            <div class="prod">producto3</div>
-            <div class="total">total</div>
+            <table>
+                <tr class="lista_num">
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>E</th>
+                    <th>F</th>
+                    <th>P</th>
+                    <th>G</th>
+                    <th>GD</th>
+                </tr>
+                <tr class="tabla_j_uno">
+                    <th class="jugador_uno">J1</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr class="tabla_j_dos">
+                    <th class="jugador_dos">J2</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    </th>
+                </tr>
+            </table>
     </section>
-    <section class="cuota_btn"></section>
-    <!-- <div class="tablero">
-        <div class="fila-1">
-            <div class="hueco-1"></div>
-            <div class="hueco-2"></div>
-            <div class="hueco-3"></div>
-        </div>
-        <div class="fila-2">
-            <div class="hueco-1"></div>
-            <div class="hueco-2"></div>
-            <div class="hueco-3"></div>
-        </div>
-        <div class="fila-3">
-            <div class="hueco-1"></div>
-            <div class="hueco-2"></div>
-            <div class="hueco-3"></div>
-            <div class="hueco-4"></div>
-            <div class="hueco-5"></div>
-            <div class="hueco-6"></div>
-            <div class="hueco-7"></div>
-        </div>
-        <div class="fila-4">
-            <div class="hueco-1"></div>
-            <div class="hueco-2"></div>
-            <div class="hueco-3"></div>
-            <div class="hueco-4"></div>
-            <div class="hueco-5"></div>
-            <div class="hueco-6"></div>
-            <div class="hueco-7"></div>
-        </div>
-        <div class="fila-5">
-            <div class="hueco-1"></div>
-            <div class="hueco-2"></div>
-            <div class="hueco-3"></div>
-            <div class="hueco-4"></div>
-            <div class="hueco-5"></div>
-            <div class="hueco-6"></div>
-            <div class="hueco-7"></div>
-        </div>
-        <div class="fila-6">
-            <div class="hueco-1"></div>
-            <div class="hueco-2"></div>
-            <div class="hueco-3"></div>
-        </div>
-        <div class="fila-7">
-            <div class="hueco-1"></div>
-            <div class="hueco-2"></div>
-            <div class="hueco-3"></div>
-        </div>
-    </div> -->
+
+
+
+
+
+
     <div class="container">
         <div class="burbujas">
             <span style="--i:11;"></span>
@@ -113,7 +123,7 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="../jugador.js"></script>
-<script src="../senku.js"></script>
+<script src="../generala.js"></script>
 <script src="../main.js"></script>
 </body>
 </html>
