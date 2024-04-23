@@ -415,3 +415,7 @@ form{
   border-radius: 50%;
 }
 
+.swal2-popup  h2{
+    animation: none
+
+}
