@@ -11,7 +11,6 @@ ul{
 body {
   display: flex;
   flex-direction: column;
-  background: #000000;
   align-items: center;
   /* position: relative; */
   height: 98vh;
@@ -68,7 +67,7 @@ h2{
     flex-direction: column;
     width: 17% ;
     position: absolute;
-    top: 80%;
+    top: 75%;
     right: 50%;
     transform: translate(50%, 0%);
   }
@@ -180,7 +179,40 @@ footer p {
   transform: translateY(4px);
 }
 
+.sonido_mute {
+  font-size: -webkit-xxx-large;
+  color: white;
+  animation: degrade 2s linear alternate;
+  cursor: pointer;
+}
+.sonido_mute:hover {
+color: #14b2fc;
+}
+.sonido_mute:active {
+color: #7117bb;
+transform: translateY(4px);
+}
 
+.darkmode{
+  font-size: -webkit-xxx-large;
+  color: white;
+  animation: degrade 2s linear alternate;
+  cursor: pointer;
+}
+.darkmode:hover {
+  color: #14b2fc;
+}
+.darkmode:active {
+  color: #7117bb;
+  transform: translateY(4px);
+}
+
+.bg_dark{
+  background: #000000;
+}
+.bg_light{
+  background-color: palegoldenrod;
+}
 
 #secti{
   display: flex;
@@ -198,6 +230,7 @@ table tr th{
   width: 1%;
   height: 35.5px;
   color: whitesmoke;
+  animation: degrade 2s linear alternate;
 }
 .lista_num th{
   height: 38px;
@@ -337,20 +370,27 @@ form{
     position: relative;
     top: 53%;
     margin: 0%;
+    animation: degrade 2s linear alternate;
 }
 .uno{
   cursor: pointer;
+  color: white;
+
 }
 .dos{
+  color: white;
   cursor: pointer;
 }
 .tres{
+  color: white;
   cursor: pointer;
 }
 .cuatro{
+  color: white;
   cursor: pointer;
 }
 .cinco{
+  color: white;
   cursor: pointer;
 }
 
@@ -358,3 +398,20 @@ form{
   position: relative;
   top: 6%;
 }
+
+
+.card_body{
+  width: 25%;
+  height: 23%;
+  position: absolute;
+  right: 75%;
+}
+
+.card_body img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: relative;
+  border-radius: 50%;
+}
+
