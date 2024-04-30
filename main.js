@@ -147,7 +147,8 @@ btn_tirar.addEventListener('click',()=>{
 })
 
 
-
+//Hacer que cuando es el turno del jugador uno no se pueda tachar los numeros del 2 y viceversa
+//Si saco 4 o 5 dados iguales y ya tengo poker o generala que me anote el numero
 
 
 turno()
@@ -189,5 +190,4 @@ tachar_num(8, tabla_dos)
 tachar_num(9, tabla_dos)
 tachar_num(10, tabla_dos)
 tachar_num(11, tabla_dos)
-
 

@@ -419,3 +419,64 @@ form{
     animation: none
 
 }
+
+
+
+
+@media (max-width:766px) {
+
+.aclaracion{
+  display: none;
+}
+.reglas{
+  top: 14%;
+}
+
+.comic-button {
+  border-radius: 42px;
+  padding: 20px 7px;
+  font-size: 24px;
+}
+
+.boton div {
+  width: 12%;
+}
+
+.dados {
+  width: 80%;
+  height: 10%;
+  position: absolute;
+  top: 31%;
+}
+.boton_usuario {
+  top: 13%;
+}
+
+.tirar{
+  width: 88px;
+}
+
+#secti{
+  width: 95%;
+}
+
+.sonido{
+  font-size: xx-large;
+}
+.sonido_mute{
+  font-size: xx-large;
+}
+
+.darkmode{
+  font-size: xx-large;
+}
+
+.dados_div div {
+  font-size: 8vh;
+}
+
+.burbujas span {
+  height: 18px;
+}
+
+}
