@@ -1,4 +1,4 @@
-let play = new Juego ()
+// let play = new Juego ()
 let h1 = document.querySelector("h1")
 let btn_usuario = document.querySelector(".btn");
 let user = document.querySelector("label");
@@ -16,49 +16,55 @@ let j_dos = document.querySelector(".jugador_dos");
 let tabla_uno = document.querySelector(".tabla_j_uno");
 let tabla_dos = document.querySelector(".tabla_j_dos");
 let rondas = document.querySelector(".ronda");
+let anotador = document.querySelector("#secti");
 let num_negro = document.querySelectorAll("th");
 let ax = document.querySelector(".axel");
 let mode = document.querySelector(".darkmode");
 let sonido_on = document.querySelector(".sonido")
 let sonido_off = document.querySelector(".sonido_mute")
+let musica = new Audio("/sound/oejam  Earl  Alien Break Down.mp3")
 const max_rondas = 3;
 let contador_ronda = 0;
 let cont_usuario = 0;
 let cont = 0;
 btn_turno.style.display = "none"
-
-    let card = document.querySelector('.card_body')
-    let url = "https://api.thecatapi.com/v1/images/search";
-
-    let data = async () => (await fetch(url)).json();
-
-
- let gatitos = setInterval(()=>{
-
-        data().then((res) => {
-            let img = document.createElement("img");
-            img.src = res[0].url;
-            document.querySelector('.card_body').innerHTML = " "
-            card.append(img);
-        }).catch((error) =>{
-            alert(error);
-        })
-
-}, 10000)
-
-card.addEventListener('click',()=>{
-    clearInterval(gatitos)
-    card.style.display = "none"
+document.querySelector(".tirar").disabled = false
+sonido_on.addEventListener("click",()=>{
+    musica.play();
+})
+sonido_off.addEventListener("click",()=>{
+    musica.pause();
 })
 
-  
 
+//     let card = document.querySelector('.card_body')
+//     let url = "https://api.thecatapi.com/v1/images/search";
+
+//     let data = async () => (await fetch(url)).json();
+
+
+//  let gatitos = setInterval(()=>{
+
+//         data().then((res) => {
+//             let img = document.createElement("img");
+//             img.src = res[0].url;
+//             document.querySelector('.card_body').innerHTML = " "
+//             card.append(img);
+//         }).catch((error) =>{
+//             alert(error);
+//         })
+
+// }, 10000)
+
+// card.addEventListener('click',()=>{
+//     clearInterval(gatitos)
+//     card.style.display = "none"
+// })
 
 h1.addEventListener('click',()=>{
     h1.style.color = `rgb(${rand()},${rand()},${rand()})`
     })
     
-
 
     if(localStorage.getItem('modo_body')){
         modo_body = localStorage.getItem('modo_body')
@@ -94,7 +100,14 @@ mode.addEventListener('click',()=>{
     }
 })
 agregar_jugador()
-
+dado_uno.style.display = "none"
+dado_dos.style.display = "none"
+dado_tres.style.display = "none"
+dado_cuatro.style.display = "none"
+dado_cinco.style.display = "none"
+anotador.style.display = "none"
+btn_tirar.style.display = "none"
+rondas.style.display = "none"
 // aca arranca el juego cuando ingresas dos nombres 
 btn_usuario.addEventListener('click',()=>{
 
@@ -102,11 +115,24 @@ btn_usuario.addEventListener('click',()=>{
     if (cont_usuario == 2){
         formulario.style.display = "none"
         btn_turno.style.display = "block"
+        dado_uno.textContent = ""
+        dado_dos.textContent = ""
+        dado_tres.textContent = ""
+        dado_cuatro.textContent = ""
+        dado_cinco.textContent = ""
+        dado_uno.style.display = "block" 
+        dado_dos.style.display = "block"
+        dado_tres.style.display = "block"
+        dado_cuatro.style.display = "block"
+        dado_cinco.style.display = "block"
+        anotador.style.display = "block"
+        btn_tirar.style.display = "block"
+        rondas.style.display = "block"
+        rondas.innerText = "Rondas"
     }
   
 btn_tirar.addEventListener('click',sumar_ronda)
 btn_tirar.addEventListener('click',()=>{
-
     let num_dado_uno = rand_dado()
     let num_dado_dos = rand_dado()
     let num_dado_tres = rand_dado()
@@ -146,13 +172,10 @@ btn_tirar.addEventListener('click',()=>{
     
 })
 
-
-//Hacer que cuando es el turno del jugador uno no se pueda tachar los numeros del 2 y viceversa
-//Si saco 4 o 5 dados iguales y ya tengo poker o generala que me anote el numero
-
+//sonido
+//Puedo bloquear los dados, pero no puedo desbloquearlos en caso de que me haya equivocado SI SE PUEDEN DESBLOQUEAR CON CLICK DERECHO TE TENES QUE FIJAR EN EL CODIGO
 
 turno()
-
 
 blok(dado_uno)
 blok(dado_dos)
@@ -165,29 +188,3 @@ desblok(dado_dos)
 desblok(dado_tres)
 desblok(dado_cuatro)
 desblok(dado_cinco)
-
-
- 
-tachar_num(1, tabla_uno)
-tachar_num(2, tabla_uno)
-tachar_num(3, tabla_uno)
-tachar_num(4, tabla_uno)
-tachar_num(5, tabla_uno)
-tachar_num(6, tabla_uno)
-tachar_num(7, tabla_uno)
-tachar_num(8, tabla_uno)
-tachar_num(9, tabla_uno)
-tachar_num(10, tabla_uno)
-tachar_num(11, tabla_uno)
-tachar_num(1, tabla_dos)
-tachar_num(2, tabla_dos)
-tachar_num(3, tabla_dos)
-tachar_num(4, tabla_dos)
-tachar_num(5, tabla_dos)
-tachar_num(6, tabla_dos)
-tachar_num(7, tabla_dos)
-tachar_num(8, tabla_dos)
-tachar_num(9, tabla_dos)
-tachar_num(10, tabla_dos)
-tachar_num(11, tabla_dos)
-

@@ -33,8 +33,8 @@
         <div class="cinco"></div>
     </div>
 </section>
-    <button class="tirar">Tirar</button>
-    <button class="terminar_turno">Terminar turno</button>
+    <button class="tirar" disabled="">Tirar</button>
+    <button class="terminar_turno" disabled="">Terminar turno</button>
     <p class="ronda">Ronda</p>
     <section id="secti">
             <table>
@@ -52,7 +52,7 @@
                     <th>G</th>
                     <th>GD</th>
                 </tr>
-                <tr class="tabla_j_uno">
+                <tr class="tabla_j_uno" aria-disabled="">
                     <th class="jugador_uno">J1</th>
                     <th></th>
                     <th></th>
@@ -85,10 +85,6 @@
     </section>
 
 
-
-
-
-
     <div class="container">
         <div class="burbujas">
             <span style="--i:11;"></span>
@@ -118,15 +114,15 @@
     <ion-icon name="contrast-outline" class="darkmode"></ion-icon>
     <div class="sonidoDiv">
          <ion-icon name="volume-medium-outline" class="sonido"></ion-icon>
-         <ion-icon name="volume-mute-outline" class="sonido_mute"></ion-icon>
+         <ion-icon name="volume-mute-outline" class="sonido_mute" onclick=""></ion-icon>
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="../jugador.js"></script>
-<script src="../generala.js"></script>
-<script src="../main.js"></script>
+<script src="../js/jugador.js"></script>
+<script src="../js/generala.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
