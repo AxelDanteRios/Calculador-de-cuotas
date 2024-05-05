@@ -20,15 +20,18 @@ let anotador = document.querySelector("#secti");
 let num_negro = document.querySelectorAll("th");
 let ax = document.querySelector(".axel");
 let mode = document.querySelector(".darkmode");
-let sonido_on = document.querySelector(".sonido")
-let sonido_off = document.querySelector(".sonido_mute")
-let musica = new Audio("/sound/oejam  Earl  Alien Break Down.mp3")
+let sonido_on = document.querySelector(".sonido");
+let sonido_off = document.querySelector(".sonido_mute");
+let musica = document.querySelector("audio");
 const max_rondas = 3;
 let contador_ronda = 0;
 let cont_usuario = 0;
 let cont = 0;
 btn_turno.style.display = "none"
 document.querySelector(".tirar").disabled = false
+
+
+
 sonido_on.addEventListener("click",()=>{
     musica.play();
 })
