@@ -1,4 +1,3 @@
-// let play = new Juego ()
 let h1 = document.querySelector("h1")
 let btn_usuario = document.querySelector(".btn");
 let user = document.querySelector("label");
@@ -28,8 +27,7 @@ let contador_ronda = 0;
 let cont_usuario = 0;
 let cont = 0;
 btn_turno.style.display = "none"
-document.querySelector(".tirar").disabled = false
-
+document.querySelector(".tirar").disabled = false;
 
 
 sonido_on.addEventListener("click",()=>{
@@ -175,8 +173,6 @@ btn_tirar.addEventListener('click',()=>{
     
 })
 
-//sonido
-//Puedo bloquear los dados, pero no puedo desbloquearlos en caso de que me haya equivocado SI SE PUEDEN DESBLOQUEAR CON CLICK DERECHO TE TENES QUE FIJAR EN EL CODIGO
 
 turno()
 

@@ -1,6 +1,3 @@
-// class Juego {
-// }
-
 function combos_ronda(tbl, arr){  
   ++cont
     let res = combo.map((elm)=> elm)
@@ -386,7 +383,7 @@ else if ((res[0] == 2) && (res[1] == 3) && (res[2] == 4) && (res[3] == 5) && (re
 }
 // suma de numeros para meter en la tabla
 //3 NUMEROS
-else if ((res[0]) == res[1] && (res[1] == res[2])){
+else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
     if(total_turno == 15){
         if(tbl.children[5].innerText != ""){
@@ -527,7 +524,7 @@ else if ((res[0]) == res[1] && (res[1] == res[2])){
     }
 }
 //2 NUMEROS
-    else if (res[0] == res[1]){
+else if ((res[0] == res[1]) && (res[2] == undefined)){
         let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
         if(total_turno == 10){
             if(tbl.children[5].innerText != ""){
@@ -665,9 +662,9 @@ else if ((res[0]) == res[1] && (res[1] == res[2])){
             }
             
         }
-    }
-    // 1
-    else if (res[0] == 1){
+}
+// 1
+else if ((res[0] == 1) && (res[1] == undefined)){
         let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
         if (total_turno == 1){
             if(tbl.children[1].innerText != ""){
@@ -692,9 +689,9 @@ else if ((res[0]) == res[1] && (res[1] == res[2])){
             }
             
         }
-    }
-    // 2
-    else if (res[0] == 2){
+}
+// 2
+else if ((res[0] == 2) && (res[1] == undefined)){
         let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
         if (total_turno == 2){
             if(tbl.children[2].innerText != ""){
@@ -719,9 +716,9 @@ else if ((res[0]) == res[1] && (res[1] == res[2])){
             }
             
         }
-    }
-    // 3
-    else if (res[0] == 3){
+}
+// 3
+else if ((res[0] == 3) && (res[1] == undefined)){
         let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
         if (total_turno == 3){
             if(tbl.children[3].innerText != ""){
@@ -746,9 +743,9 @@ else if ((res[0]) == res[1] && (res[1] == res[2])){
             }
             
         }
-    }
-    // 4
-    else if (res[0] == 4){
+}
+// 4
+else if ((res[0] == 4) && (res[1] == undefined)){
         let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
         if (total_turno == 4){
             if(tbl.children[4].innerText != ""){
@@ -773,9 +770,9 @@ else if ((res[0]) == res[1] && (res[1] == res[2])){
             }
             
         }
-    }
-    // 5
-    else if (res[0] == 5){
+}
+// 5
+else if ((res[0] == 5) && (res[1] == undefined)){
         let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
         if(total_turno == 5){
             if(tbl.children[5].innerText != ""){
@@ -800,9 +797,9 @@ else if ((res[0]) == res[1] && (res[1] == res[2])){
             }
             
         }
-    }
-    // 6
-    else if (res[0] == 6){
+}
+// 6
+else if ((res[0] == 6) && (res[1] == undefined)){
         let total_turno = res.reduce((acc,elm ) => acc + elm, 0)
         if (total_turno == 6){
             if(tbl.children[6].innerText != ""){
@@ -827,8 +824,29 @@ else if ((res[0]) == res[1] && (res[1] == res[2])){
             }
             
         }
-    }
-    if(cont %2 == 0){
+}
+else{
+  --cont
+  document.querySelector(".tirar").disabled = true
+  dado_uno.style.color = "white"
+  dado_dos.style.color = "white"
+  dado_tres.style.color = "white"
+  dado_cuatro.style.color = "white"
+  dado_cinco.style.color = "white" 
+  Toastify({
+    text: "Terminaste el turno y no seleccionaste un combo o numero valido, selecciona o elimina un numero",
+    duration: 5000,
+    newWindow: true,
+    close: true,
+    gravity: "bottom", // `top` or `bottom`
+    position: "center", // `left`, `center` or `right`
+    stopOnFocus: true, // Prevents dismissing of toast on hover
+    style: {
+      background: "linear-gradient(to right, #f14141, #7b0808)",
+    },
+  }).showToast();
+}
+if(cont %2 == 0){
     Toastify({
         text: "turno de " + j_uno.innerText,
         duration: 3000,
@@ -844,8 +862,8 @@ else if ((res[0]) == res[1] && (res[1] == res[2])){
           background: "linear-gradient(to right, #f700ff, #78cdff)",
         },
       }).showToast();
-    }
-    else{
+}
+else{
             Toastify({
         text: "turno de " + j_dos.innerText,
         duration: 3000,
@@ -861,7 +879,7 @@ else if ((res[0]) == res[1] && (res[1] == res[2])){
           background: "linear-gradient(to right, #f700ff, #78cdff)",
         },
       }).showToast();
-    }
+}
 }
 
 
@@ -886,7 +904,6 @@ function tachar_num_uno(n){
   if(cont %2 == 0){
       tabla_uno.children[n].innerText = "X"
       ++cont
-
                Toastify({
         text: "te borraste el casillero " + `${n}` + " turno de " + j_dos.innerText,
         duration: 3000,
@@ -949,7 +966,6 @@ function tachar_num_uno(n){
 })
 }
 
-  
 function tachar_num_dos(n){
   tabla_dos.children[n].addEventListener('click',()=>{
     document.querySelector(".tirar").disabled = false
@@ -973,7 +989,7 @@ function tachar_num_dos(n){
       ++cont
 
                Toastify({
-        text: "te borraste el casillero " + `${n}` + " turno de " + j_dos.innerText,
+        text: "te borraste el casillero " + `${n}` + " turno de " + j_uno.innerText,
         duration: 3000,
         newWindow: true,
         close: true,
@@ -1040,7 +1056,6 @@ function tachar_num_dos(n){
     //     j.children[n].innerText = ""
     // })
 // }
-
 
 function turno(){
 
