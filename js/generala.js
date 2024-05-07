@@ -24,6 +24,7 @@ if((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[1] == 
     
       if(tbl.children[11].innerText != ""){
         --cont
+        blanquear_dados()
         Toastify({
             text: "Ya tenes la generala doble",
             duration: 3000,
@@ -61,6 +62,7 @@ else if((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[1
     
       if(tbl.children[10].innerText != ""){
         --cont
+        blanquear_dados()
         Toastify({
             text: "Ya tenes la generala",
             duration: 3000,
@@ -99,6 +101,7 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         if(total_turno == 20){
             if(tbl.children[5].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -121,6 +124,7 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         else if (total_turno == 24){
             if(tbl.children[6].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -144,6 +148,7 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         else if (total_turno == 16){
             if(tbl.children[4].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -167,6 +172,7 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         else if (total_turno == 12){
             if(tbl.children[3].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -190,6 +196,7 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         else if (total_turno == 8){
             if(tbl.children[2].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -213,6 +220,7 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         else if (total_turno == 4){
             if(tbl.children[1].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -239,6 +247,7 @@ else if((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[0
     
       if(tbl.children[9].innerText != ""){
         --cont
+        blanquear_dados()
         Toastify({
             text: "Ya tenes poker",
             duration: 3000,
@@ -276,6 +285,7 @@ else if((res[0] == res[1]) && (res[1]== res[2]) && (res[3] == res[4]) && (res[3]
     
       if(tbl.children[8].innerText != ""){
         --cont
+        blanquear_dados()
         Toastify({
             text: "Ya tenes full",
             duration: 3000,
@@ -313,6 +323,7 @@ else if ((res[0] == 1) && (res[1] == 2) && (res[2] == 3) && (res[3] == 4) && (re
     
       if(tbl.children[7].innerText != ""){
         --cont
+        blanquear_dados()
         Toastify({
             text: "Ya tenes escalera",
             duration: 3000,
@@ -350,6 +361,7 @@ else if ((res[0] == 2) && (res[1] == 3) && (res[2] == 4) && (res[3] == 5) && (re
     
       if(tbl.children[7].innerText != ""){
         --cont
+        blanquear_dados()
         Toastify({
             text: "Ya tenes escalera",
             duration: 3000,
@@ -388,6 +400,7 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     if(total_turno == 15){
         if(tbl.children[5].innerText != ""){
             --cont
+            blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
                 duration: 3000,
@@ -410,6 +423,7 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     else if (total_turno == 18){
         if(tbl.children[6].innerText != ""){
             --cont
+            blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
                 duration: 3000,
@@ -433,6 +447,7 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     else if (total_turno == 12){
         if(tbl.children[4].innerText != ""){
             --cont
+            blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
                 duration: 3000,
@@ -456,6 +471,7 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     else if (total_turno == 9){
         if(tbl.children[3].innerText != ""){
             --cont
+            blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
                 duration: 3000,
@@ -479,6 +495,7 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     else if (total_turno == 6){
         if(tbl.children[2].innerText != ""){
             --cont
+            blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
                 duration: 3000,
@@ -502,6 +519,7 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     else if (total_turno == 3){
         if(tbl.children[1].innerText != ""){
             --cont
+            blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
                 duration: 3000,
@@ -529,6 +547,7 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         if(total_turno == 10){
             if(tbl.children[5].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -551,6 +570,7 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         else if (total_turno == 12){
             if(tbl.children[6].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -573,6 +593,7 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         else if (total_turno == 8){
             if(tbl.children[4].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -596,6 +617,7 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         else if (total_turno == 6){
             if(tbl.children[3].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -619,6 +641,7 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         else if (total_turno == 4){
             if(tbl.children[2].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -642,6 +665,7 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         else if (total_turno == 2){
             if(tbl.children[1].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -669,6 +693,7 @@ else if ((res[0] == 1) && (res[1] == undefined)){
         if (total_turno == 1){
             if(tbl.children[1].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -696,6 +721,7 @@ else if ((res[0] == 2) && (res[1] == undefined)){
         if (total_turno == 2){
             if(tbl.children[2].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -723,6 +749,7 @@ else if ((res[0] == 3) && (res[1] == undefined)){
         if (total_turno == 3){
             if(tbl.children[3].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -750,6 +777,7 @@ else if ((res[0] == 4) && (res[1] == undefined)){
         if (total_turno == 4){
             if(tbl.children[4].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -777,6 +805,7 @@ else if ((res[0] == 5) && (res[1] == undefined)){
         if(total_turno == 5){
             if(tbl.children[5].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -804,6 +833,7 @@ else if ((res[0] == 6) && (res[1] == undefined)){
         if (total_turno == 6){
             if(tbl.children[6].innerText != ""){
                 --cont
+                blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
                     duration: 3000,
@@ -881,7 +911,6 @@ else{
       }).showToast();
 }
 }
-
 
 function tachar_num_uno(n){
   tabla_uno.children[n].addEventListener('click',()=>{
@@ -1267,4 +1296,12 @@ function deshabilitar(){
   if ((dado_uno.style.color == "white") && (dado_dos.style.color == "white") && (dado_tres.style.color == "white") && (dado_cuatro.style.color == "white") && (dado_cinco.style.color == "white")){
     document.querySelector(".terminar_turno").disabled = true
   }
+}
+
+function blanquear_dados(){
+  dado_uno.style.color = "white"
+  dado_dos.style.color = "white"
+  dado_tres.style.color = "white"
+  dado_cuatro.style.color = "white"
+  dado_cinco.style.color = "white" 
 }
