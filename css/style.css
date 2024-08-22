@@ -164,7 +164,6 @@ footer p {
   margin: 1%;
   animation: degrade 2s linear alternate;
 }
-
   .sonido {
     font-size: -webkit-xxx-large;
     color: white;
@@ -214,6 +213,7 @@ transform: translateY(4px);
   background-color: palegoldenrod;
 }
 
+
 #secti{
   display: flex;
   flex-direction: column;
@@ -223,7 +223,7 @@ transform: translateY(4px);
   border-style: solid ;
   border-color: #fcf414;
   width: 65%;
-  height: 18%;
+  /* height: 18%; */
 }
 table tr th{
   border: 3px solid #fcf414;
@@ -232,8 +232,33 @@ table tr th{
   color: whitesmoke;
   animation: degrade 2s linear alternate;
 }
+.num_jugadores p{
+  font-size: 40px;
+  cursor: pointer;
+  margin: 0%;
+}
+
+.num_jugadores {
+display: flex;
+width: 100%;
+justify-content: space-around;
+}
+
+.btn_num_jug {
+  height: 2rem;
+  width: 9rem;
+  margin-top: 4px;
+  background-color: #f4f5f8;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  transition: all 400ms;
+  box-shadow: 0 0 3px  #f4f5f8, 0 0 3px #f4f5f8;
+  cursor: pointer;
+}
 .lista_num th{
   height: 38px;
+  cursor: default;
 }
 
 .total{
@@ -311,8 +336,18 @@ form{
   position: absolute;
   top: 30%;
 }
-
-.form {
+.cant_jugadores {
+  width: 45%;
+  height: 28%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+}
+.form_num {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to bottom, #424242, #0000);
@@ -323,7 +358,24 @@ form{
   border-radius: 0.5rem;
 }
 
-.form label {
+.form_num label {
+  color: #f4f5f8;
+  margin: 7px 0px 0px 0px;
+  font-size: 3rem;
+  text-align: center;
+}
+.form_nom {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #424242, #0000);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.form_nom label {
   color: #f4f5f8;
   margin: 7px 0px 0px 0px;
   font-size: 3rem;
@@ -376,10 +428,9 @@ form{
     margin: 0%;
     animation: degrade 2s linear alternate;
 }
-.uno{
+/* .uno{
   cursor: pointer;
   color: white;
-
 }
 .dos{
   color: white;
@@ -396,6 +447,32 @@ form{
 .cinco{
   color: white;
   cursor: pointer;
+} */
+
+
+
+img{
+  border-radius: 13%;
+  box-shadow: 0px 0px 12px 6px #7117bb;
+} 
+
+
+th{
+  cursor: pointer;
+}
+
+
+.jugador_uno {
+  cursor: default;
+}
+.jugador_dos {
+  cursor: default;
+}
+.jugador_tres {
+  cursor: default;
+}
+.jugador_cuatro{
+  cursor: default;
 }
 
 .terminar_turno{
@@ -425,7 +502,10 @@ form{
 }
 
 
-
+.btn_reset{
+ position : relative;
+top: 20px
+}
 
 @media (max-width:766px) {
 
@@ -484,3 +564,5 @@ form{
 }
 
 }
+
+
