@@ -152,6 +152,17 @@ h2{
     transform: translateY(-10vh) scale(1) rotate(45deg) skew(10deg, 10deg);
    }
   }
+
+  @keyframes degradedos {
+    0%{
+      color: rgb(255, 255, 255);
+    }
+    100%{
+      color: rgb(0, 0, 0);
+    }
+  }
+
+
 footer{
     width: 100%;
     display: flex;
@@ -171,11 +182,11 @@ footer p {
     cursor: pointer;
   }
 .sonido:hover {
-  color: #14b2fc;
+  color: #14b2fc !important;
 }
 .sonido:active {
-  color: #7117bb;
-  transform: translateY(4px);
+  color: #7117bb !important;
+  transform: translateY(4px) !important;
 }
 
 .sonido_mute {
@@ -185,11 +196,11 @@ footer p {
   cursor: pointer;
 }
 .sonido_mute:hover {
-color: #14b2fc;
+color: #14b2fc !important;
 }
 .sonido_mute:active {
-color: #7117bb;
-transform: translateY(4px);
+color: #7117bb !important;
+transform: translateY(4px) !important;
 }
 
 .darkmode{
@@ -198,12 +209,13 @@ transform: translateY(4px);
   animation: degrade 2s linear alternate;
   cursor: pointer;
 }
+
 .darkmode:hover {
-  color: #14b2fc;
+  color: #14b2fc !important;
 }
 .darkmode:active {
-  color: #7117bb;
-  transform: translateY(4px);
+  color: #7117bb !important;
+  transform: translateY(4px) !important;
 }
 
 .bg_dark{
@@ -232,6 +244,24 @@ table tr th{
   color: whitesmoke;
   animation: degrade 2s linear alternate;
 }
+
+.tabla_j_uno th:not(.jugador_uno):hover{
+transition: 0.5s ease ;
+background-color:rgb(105, 105, 105) ;
+}.tabla_j_dos th:not(.jugador_dos):hover{
+transition: 0.5s ease ;
+background-color:rgb(105, 105, 105) ;
+}
+.tabla_j_tres th:not(.jugador_tres):hover{
+transition: 0.5s ease ;
+background-color:rgb(105, 105, 105) ;
+}
+.tabla_j_cuatro th:not(.jugador_cuatro):hover{
+transition: 0.5s ease ;
+background-color:rgb(105, 105, 105) ;
+}
+
+      
 .num_jugadores p{
   font-size: 40px;
   cursor: pointer;
@@ -428,27 +458,6 @@ form{
     margin: 0%;
     animation: degrade 2s linear alternate;
 }
-/* .uno{
-  cursor: pointer;
-  color: white;
-}
-.dos{
-  color: white;
-  cursor: pointer;
-}
-.tres{
-  color: white;
-  cursor: pointer;
-}
-.cuatro{
-  color: white;
-  cursor: pointer;
-}
-.cinco{
-  color: white;
-  cursor: pointer;
-} */
-
 
 
 img{
@@ -507,7 +516,18 @@ th{
 top: 20px
 }
 
-@media (max-width:766px) {
+
+.dados_div img:active{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width:550px) {
+
+
 
 .aclaracion{
   display: none;
@@ -518,7 +538,7 @@ top: 20px
 
 .comic-button {
   border-radius: 42px;
-  padding: 20px 7px;
+  padding: 20px 0px;
   font-size: 24px;
 }
 
@@ -527,20 +547,27 @@ top: 20px
 }
 
 .dados {
-  width: 80%;
-  height: 10%;
+  width: 94%;
+  height: 13%;
   position: absolute;
-  top: 31%;
+  top: 23%;
 }
 .boton_usuario {
-  top: 13%;
+  z-index: 1;
+  top: 30%;
+}
+
+.ronda{
+  top: 38%;
 }
 
 .tirar{
+  top: 41%;
   width: 88px;
 }
 
 #secti{
+  top: 57%;
   width: 95%;
 }
 

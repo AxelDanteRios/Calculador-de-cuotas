@@ -7,6 +7,12 @@ function combos_ronda(tbl, arr){
   //combos
   if (res[0] === undefined){
     --cont
+    dado_uno.style.color = "white"
+    dado_dos.style.color = "white"
+    dado_tres.style.color = "white"
+    dado_cuatro.style.color = "white"
+    dado_cinco.style.color = "white" 
+    bek = true
     Toastify({
         text: "selecciona un dado",
         duration: 3000,
@@ -26,6 +32,12 @@ if((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[1] == 
     
       if(tbl.children[11].innerText == undefined){
         --cont
+        dado_uno.style.color = "white"
+        dado_dos.style.color = "white"
+        dado_tres.style.color = "white"
+        dado_cuatro.style.color = "white"
+        dado_cinco.style.color = "white" 
+        bek = true
         blanquear_dados()
         Toastify({
             text: "Ya tenes la generala doble",
@@ -64,6 +76,12 @@ else if((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[1
     
       if(tbl.children[10].innerText != ""){
         --cont
+        dado_uno.style.color = "white"
+        dado_dos.style.color = "white"
+        dado_tres.style.color = "white"
+        dado_cuatro.style.color = "white"
+        dado_cinco.style.color = "white" 
+        bek = true
         blanquear_dados()
         Toastify({
             text: "Ya tenes la generala",
@@ -103,6 +121,12 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         if(total_turno == 20){
             if(tbl.children[5].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -126,6 +150,12 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         else if (total_turno == 24){
             if(tbl.children[6].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -150,6 +180,12 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         else if (total_turno == 16){
             if(tbl.children[4].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -174,6 +210,12 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         else if (total_turno == 12){
             if(tbl.children[3].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -198,6 +240,12 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         else if (total_turno == 8){
             if(tbl.children[2].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -222,6 +270,12 @@ else if ((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[
         else if (total_turno == 4){
             if(tbl.children[1].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -249,6 +303,12 @@ else if((res[0] == res[1]) && (res[1] == res[2]) && (res[1] == res[3]) && (res[0
     
       if(tbl.children[9].innerText != ""){
         --cont
+        dado_uno.style.color = "white"
+        dado_dos.style.color = "white"
+        dado_tres.style.color = "white"
+        dado_cuatro.style.color = "white"
+        dado_cinco.style.color = "white" 
+        bek = true
         blanquear_dados()
         Toastify({
             text: "Ya tenes poker",
@@ -287,6 +347,12 @@ else if((res[0] == res[1]) && (res[1]== res[2]) && (res[3] == res[4]) && (res[3]
     
       if(tbl.children[8].innerText != ""){
         --cont
+        dado_uno.style.color = "white"
+        dado_dos.style.color = "white"
+        dado_tres.style.color = "white"
+        dado_cuatro.style.color = "white"
+        dado_cinco.style.color = "white" 
+        bek = true
         blanquear_dados()
         Toastify({
             text: "Ya tenes full",
@@ -325,6 +391,12 @@ else if ((res[0] == 1) && (res[1] == 2) && (res[2] == 3) && (res[3] == 4) && (re
     
       if(tbl.children[7].innerText != ""){
         --cont
+        dado_uno.style.color = "white"
+        dado_dos.style.color = "white"
+        dado_tres.style.color = "white"
+        dado_cuatro.style.color = "white"
+        dado_cinco.style.color = "white" 
+        bek = true
         blanquear_dados()
         Toastify({
             text: "Ya tenes escalera",
@@ -363,6 +435,12 @@ else if ((res[0] == 2) && (res[1] == 3) && (res[2] == 4) && (res[3] == 5) && (re
     
       if(tbl.children[7].innerText != ""){
         --cont
+        dado_uno.style.color = "white"
+        dado_dos.style.color = "white"
+        dado_tres.style.color = "white"
+        dado_cuatro.style.color = "white"
+        dado_cinco.style.color = "white" 
+        bek = true
         blanquear_dados()
         Toastify({
             text: "Ya tenes escalera",
@@ -402,6 +480,12 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     if(total_turno == 15){
         if(tbl.children[5].innerText != ""){
             --cont
+            dado_uno.style.color = "white"
+            dado_dos.style.color = "white"
+            dado_tres.style.color = "white"
+            dado_cuatro.style.color = "white"
+            dado_cinco.style.color = "white" 
+            bek = true
             blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -425,6 +509,12 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     else if (total_turno == 18){
         if(tbl.children[6].innerText != ""){
             --cont
+            dado_uno.style.color = "white"
+            dado_dos.style.color = "white"
+            dado_tres.style.color = "white"
+            dado_cuatro.style.color = "white"
+            dado_cinco.style.color = "white" 
+            bek = true
             blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -449,6 +539,12 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     else if (total_turno == 12){
         if(tbl.children[4].innerText != ""){
             --cont
+            dado_uno.style.color = "white"
+            dado_dos.style.color = "white"
+            dado_tres.style.color = "white"
+            dado_cuatro.style.color = "white"
+            dado_cinco.style.color = "white" 
+            bek = true
             blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -473,6 +569,12 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     else if (total_turno == 9){
         if(tbl.children[3].innerText != ""){
             --cont
+            dado_uno.style.color = "white"
+            dado_dos.style.color = "white"
+            dado_tres.style.color = "white"
+            dado_cuatro.style.color = "white"
+            dado_cinco.style.color = "white" 
+            bek = true
             blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -497,6 +599,12 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     else if (total_turno == 6){
         if(tbl.children[2].innerText != ""){
             --cont
+            dado_uno.style.color = "white"
+            dado_dos.style.color = "white"
+            dado_tres.style.color = "white"
+            dado_cuatro.style.color = "white"
+            dado_cinco.style.color = "white" 
+            bek = true
             blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -521,6 +629,12 @@ else if ((res[0]) == res[1] && (res[1] == res[2]) && (res[3] == undefined)){
     else if (total_turno == 3){
         if(tbl.children[1].innerText != ""){
             --cont
+            dado_uno.style.color = "white"
+            dado_dos.style.color = "white"
+            dado_tres.style.color = "white"
+            dado_cuatro.style.color = "white"
+            dado_cinco.style.color = "white" 
+            bek = true
             blanquear_dados()
             Toastify({
                 text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -549,6 +663,12 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         if(total_turno == 10){
             if(tbl.children[5].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -572,6 +692,12 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         else if (total_turno == 12){
             if(tbl.children[6].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -595,6 +721,12 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         else if (total_turno == 8){
             if(tbl.children[4].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -619,6 +751,12 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         else if (total_turno == 6){
             if(tbl.children[3].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -643,6 +781,12 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         else if (total_turno == 4){
             if(tbl.children[2].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -667,6 +811,12 @@ else if ((res[0] == res[1]) && (res[2] == undefined)){
         else if (total_turno == 2){
             if(tbl.children[1].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -695,6 +845,12 @@ else if ((res[0] == 1) && (res[1] == undefined)){
         if (total_turno == 1){
             if(tbl.children[1].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -723,6 +879,12 @@ else if ((res[0] == 2) && (res[1] == undefined)){
         if (total_turno == 2){
             if(tbl.children[2].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -751,6 +913,12 @@ else if ((res[0] == 3) && (res[1] == undefined)){
         if (total_turno == 3){
             if(tbl.children[3].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -779,6 +947,12 @@ else if ((res[0] == 4) && (res[1] == undefined)){
         if (total_turno == 4){
             if(tbl.children[4].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -807,6 +981,12 @@ else if ((res[0] == 5) && (res[1] == undefined)){
         if(total_turno == 5){
             if(tbl.children[5].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -835,6 +1015,12 @@ else if ((res[0] == 6) && (res[1] == undefined)){
         if (total_turno == 6){
             if(tbl.children[6].innerText != ""){
                 --cont
+                dado_uno.style.color = "white"
+                dado_dos.style.color = "white"
+                dado_tres.style.color = "white"
+                dado_cuatro.style.color = "white"
+                dado_cinco.style.color = "white" 
+                bek = true
                 blanquear_dados()
                 Toastify({
                     text: "Ya tenes este numero seleccione otro o borre un numero",
@@ -865,6 +1051,7 @@ else{
   dado_tres.style.color = "white"
   dado_cuatro.style.color = "white"
   dado_cinco.style.color = "white" 
+  bek = true
   Toastify({
     text: "Terminaste el turno y no seleccionaste un combo o numero valido, selecciona o elimina un numero",
     duration: 5000,
@@ -1045,50 +1232,50 @@ function tachar_num_uno(n, m){
     }
     }
   
-  if(cont == 22){
-    let th_total = document.createElement("th")
-    th_total.textContent = "total"
-    numeros_tabla.append(th_total)
-    let th_uno = document.createElement("th")
-    th_uno.textContent = total_jugadores(arr_uno)
-    tabla_uno.append(th_uno)
-    let th_dos = document.createElement("th")
-    th_dos.textContent = total_jugadores(arr_dos)
-    tabla_dos.append(th_dos)
-    if (total_jugadores(arr_dos) > total_jugadores(arr_uno)){
-        Swal.fire("Felicidades " + `${j_dos.textContent}` + " ganaste");
-        let btn_reset = document.createElement("button")
-        btn_reset.textContent = "volver a jugar"
-        btn_turno.replaceWith(btn_reset)
-        btn_reset.classList.add("btn_reset")
-        btn_reset.addEventListener('click',()=>{
-            resetear()
-            btn_reset.replaceWith(btn_turno)
-        })
-    }
-    else if (total_jugadores(arr_dos) == total_jugadores(arr_uno)){
-        Swal.fire("Empataron");
-        let btn_reset = document.createElement("button")
-        btn_reset.textContent = "volver a jugar"
-        btn_turno.replaceWith(btn_reset)
-        btn_reset.classList.add("btn_reset")
-        btn_reset.addEventListener('click',()=>{
-            resetear()
-            btn_reset.replaceWith(btn_turno)
-        })
-    }
-    else{
-        Swal.fire("Felicidades " + `${j_uno.textContent}` + " ganaste");
-        let btn_reset = document.createElement("button")
-        btn_reset.textContent = "volver a jugar"
-        btn_turno.replaceWith(btn_reset)
-        btn_reset.classList.add("btn_reset")
-        btn_reset.addEventListener('click',()=>{
-            resetear()
-            btn_reset.replaceWith(btn_turno)
-        })
-    }
-}
+//   if(cont == 22){
+//     let th_total = document.createElement("th")
+//     th_total.textContent = "total"
+//     numeros_tabla.append(th_total)
+//     let th_uno = document.createElement("th")
+//     th_uno.textContent = total_jugadores(arr_uno)
+//     tabla_uno.append(th_uno)
+//     let th_dos = document.createElement("th")
+//     th_dos.textContent = total_jugadores(arr_dos)
+//     tabla_dos.append(th_dos)
+//     if (total_jugadores(arr_dos) > total_jugadores(arr_uno)){
+//         Swal.fire("Felicidades " + `${j_dos.textContent}` + " ganaste");
+//         let btn_reset = document.createElement("button")
+//         btn_reset.textContent = "volver a jugar"
+//         btn_turno.replaceWith(btn_reset)
+//         btn_reset.classList.add("btn_reset")
+//         btn_reset.addEventListener('click',()=>{
+//             resetear()
+//             btn_reset.replaceWith(btn_turno)
+//         })
+//     }
+//     else if (total_jugadores(arr_dos) == total_jugadores(arr_uno)){
+//         Swal.fire("Empataron");
+//         let btn_reset = document.createElement("button")
+//         btn_reset.textContent = "volver a jugar"
+//         btn_turno.replaceWith(btn_reset)
+//         btn_reset.classList.add("btn_reset")
+//         btn_reset.addEventListener('click',()=>{
+//             resetear()
+//             btn_reset.replaceWith(btn_turno)
+//         })
+//     }
+//     else{
+//         Swal.fire("Felicidades " + `${j_uno.textContent}` + " ganaste");
+//         let btn_reset = document.createElement("button")
+//         btn_reset.textContent = "volver a jugar"
+//         btn_turno.replaceWith(btn_reset)
+//         btn_reset.classList.add("btn_reset")
+//         btn_reset.addEventListener('click',()=>{
+//             resetear()
+//             btn_reset.replaceWith(btn_turno)
+//         })
+//     }
+// }
 })
 }
 
@@ -1119,7 +1306,7 @@ function tachar_num_dos(n, m){
       }
       if(n == 7){
         Toastify({
-          text: "te borraste la escalera es el turno turno de " + j_uno.innerText,
+          text: "te borraste la escalera es el turno de " + j_uno.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1136,7 +1323,7 @@ function tachar_num_dos(n, m){
       }
       else if(n == 8){
         Toastify({
-          text: "te borraste el full es el turno turno de " + j_uno.innerText,
+          text: "te borraste el full es el turno de " + j_uno.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1153,7 +1340,7 @@ function tachar_num_dos(n, m){
       }
       else if(n == 9){
         Toastify({
-          text: "te borraste el poker es el turno turno de " + j_uno.innerText,
+          text: "te borraste el poker es el turno de " + j_uno.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1170,7 +1357,7 @@ function tachar_num_dos(n, m){
       }
       else if(n == 10){
         Toastify({
-          text: "te borraste la generala es el turno turno de " + j_uno.innerText,
+          text: "te borraste la generala es el turno de " + j_uno.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1187,7 +1374,7 @@ function tachar_num_dos(n, m){
       }
       else if(n == 11){
         Toastify({
-          text: "te borraste la generala doble es el turno turno de " + j_uno.innerText,
+          text: "te borraste la generala doble es el turno de " + j_uno.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1730,7 +1917,6 @@ function fin_juego(){
 // }
 
 function turno(){
-
   tachar_num_uno(1, 2)
   tachar_num_uno(2, 2)
   tachar_num_uno(3, 2)
@@ -1756,6 +1942,12 @@ function turno(){
   tachar_num_dos(11, 2)
 
       btn_turno.addEventListener('click',()=>{
+      bek = false
+      dado_uno.style.color = "white"
+      dado_dos.style.color = "white"
+      dado_tres.style.color = "white"
+      dado_cuatro.style.color = "white"
+      dado_cinco.style.color = "white"
       blanquear_dados()
       document.querySelector(".terminar_turno").disabled = true
       document.querySelector(".tirar").disabled = false
@@ -1811,8 +2003,6 @@ function turno(){
         }).showToast();
       }
     }
-
-
 
     if((tabla_dos_final[1].textContent != "") && (tabla_dos_final[2].textContent != "") && (tabla_dos_final[3].textContent != "") && (tabla_dos_final[4].textContent != "") && (tabla_dos_final[5].textContent != "") && (tabla_dos_final[6].textContent != "") && (tabla_dos_final[7].textContent != "") && (tabla_dos_final[8].textContent != "") && (tabla_dos_final[9].textContent != "") && (tabla_dos_final[10].textContent != "") && (tabla_dos_final[11].textContent != "")){
         fin_juego()
@@ -1893,6 +2083,12 @@ function turno_tres(){
   tachar_num_tres(11, 3)
 
       btn_turno.addEventListener('click',()=>{
+        bek = false
+        dado_uno.style.color = "white"
+        dado_dos.style.color = "white"
+        dado_tres.style.color = "white"
+        dado_cuatro.style.color = "white"
+        dado_cinco.style.color = "white"
       blanquear_dados()
       document.querySelector(".terminar_turno").disabled = true
       document.querySelector(".tirar").disabled = false
@@ -1904,7 +2100,7 @@ function turno_tres(){
 
     if(cont == 0){
     combos_ronda(tabla_uno, arr_uno)
-
+    if(cont == 1){
       Toastify({
           text: "turno de " + j_dos.innerText,
           duration: 3000,
@@ -1921,11 +2117,12 @@ function turno_tres(){
           },
         }).showToast();
 
-
+      }
 
     }
     else if (cont == 1){
     combos_ronda(tabla_dos, arr_dos)
+    if(cont == 2){
               Toastify({
           text: "turno de " + j_tres.innerText,
           duration: 3000,
@@ -1941,10 +2138,15 @@ function turno_tres(){
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast();
+      }
     }
 
     else if(cont == 2){
       combos_ronda(tabla_tres, arr_tres)
+      if (cont == max_tres){
+        cont = 0
+      }
+      if(cont == 0){
     Toastify({
       text: "turno de " + j_uno.innerText,
       duration: 3000,
@@ -1960,6 +2162,7 @@ function turno_tres(){
         background: "linear-gradient(to right, #f700ff, #78cdff)",
       },
     }).showToast();
+    }
     }
 
 
@@ -2079,6 +2282,12 @@ function turno_cuatro(){
   tachar_num_cuatro(11, 4)
 
       btn_turno.addEventListener('click',()=>{
+        bek = false
+        dado_uno.style.color = "white"
+        dado_dos.style.color = "white"
+        dado_tres.style.color = "white"
+        dado_cuatro.style.color = "white"
+        dado_cinco.style.color = "white"
       blanquear_dados()
       document.querySelector(".terminar_turno").disabled = true
       document.querySelector(".tirar").disabled = false
@@ -2089,7 +2298,7 @@ function turno_cuatro(){
       }
     if(cont == 0){
     combos_ronda(tabla_uno, arr_uno)
-
+    if(cont == 1){
       Toastify({
           text: "turno de " + j_dos.innerText,
           duration: 3000,
@@ -2106,11 +2315,12 @@ function turno_cuatro(){
           },
         }).showToast();
 
-
+      }
 
     }
     else if (cont == 1){
     combos_ronda(tabla_dos, arr_dos)
+    if(cont == 2){
               Toastify({
           text: "turno de " + j_tres.innerText,
           duration: 3000,
@@ -2126,10 +2336,12 @@ function turno_cuatro(){
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast();
+      }
     }
 
     else if(cont == 2){
       combos_ronda(tabla_tres, arr_tres)
+      if(cont == 3){
     Toastify({
       text: "turno de " + j_cuatro.innerText,
       duration: 3000,
@@ -2145,11 +2357,16 @@ function turno_cuatro(){
         background: "linear-gradient(to right, #f700ff, #78cdff)",
       },
     }).showToast();
+  }
     }
 
 
     else if(cont == 3){
       combos_ronda(tabla_cuatro, arr_cuatro)
+      if (cont == max_cuatro){
+        cont = 0
+      }
+      if(cont == 0){
     Toastify({
       text: "turno de " + j_uno.innerText,
       duration: 3000,
@@ -2165,6 +2382,7 @@ function turno_cuatro(){
         background: "linear-gradient(to right, #f700ff, #78cdff)",
       },
     }).showToast();
+  }
     }
 
 
@@ -2250,32 +2468,52 @@ function turno_cuatro(){
 
 function blok(dado){
     dado.addEventListener('click',()=>{
+      if(dado.style.color !== "red"){
+      if(bek == true){
         habilitar()
         dado.style.boxShadow = "0px 0px 12px 6px red"
+        dado.style.color = "red"
         let conver = dado.textContent
         combo.push(Number(conver))
+
         if(dado.textContent == ""){
         document.querySelector(".terminar_turno").disabled = true
       }
+    }
+}
+else {
+  dado.style.boxShadow = "#7117bb 0px 0px 12px 6px"
+  dado.style.color = "white"
+  let desbloqueo = dado.textContent
+  let num_desbloqueo = (Number(desbloqueo))
+  let wew = combo.some((elm)=> elm == num_desbloqueo)
+  console.log(wew)
+  if (wew == true){
+  let indice_num = combo.indexOf(num_desbloqueo)
+  combo.splice(indice_num, 1)
+  deshabilitar()
+  }
+}
     })
 }
 
-function desblok(dado){
-    dado.addEventListener('contextmenu',e =>{
-        e.preventDefault()
-        dado.style.boxShadow = "#7117bb 0px 0px 12px 6px"
-        let desbloqueo = dado.textContent
-        let num_desbloqueo = (Number(desbloqueo))
-        let wew = combo.some((elm)=> elm == num_desbloqueo)
-        console.log(wew)
-        if (wew == true){
-        let indice_num = combo.indexOf(num_desbloqueo)
-        combo.splice(indice_num, 1)
-        deshabilitar()
-        }
+// function desblok(dado){
+//     dado.addEventListener('contextmenu',e =>{
+//         e.preventDefault()
+//         dado.style.boxShadow = "#7117bb 0px 0px 12px 6px"
+//         dado.style.color = "white"
+//         let desbloqueo = dado.textContent
+//         let num_desbloqueo = (Number(desbloqueo))
+//         let wew = combo.some((elm)=> elm == num_desbloqueo)
+//         console.log(wew)
+//         if (wew == true){
+//         let indice_num = combo.indexOf(num_desbloqueo)
+//         combo.splice(indice_num, 1)
+//         deshabilitar()
+//         }
         
-    })
-}
+//     })
+// }
 
 function rand(){
             return Math.floor(Math.random() * 255)
@@ -2411,11 +2649,11 @@ function resetear(){
     cont_usuario = 0 
     cont = 0
     reiniciarTabla()
-    juegoEnCurso = false
-    // cantidad_jugadores.style.display = "flex"
-    // cantidad_players[0].style.color = "white"
-    // cantidad_players[1].style.color = "white"
-    // cantidad_players[2].style.color = "white"
+    tachar_num_uno = []
+    cantidad_jugadores.style.display = "flex"
+    cantidad_players[0].style.color = "white"
+    cantidad_players[1].style.color = "white"
+    cantidad_players[2].style.color = "white"
     user.innerText = "Jugador 1"
     btn_jug.disabled = true;
     btn_jug.addEventListener('click',()=>[
@@ -2486,4 +2724,10 @@ for (let j = 0; j < fila.cells.length; j++){
   celda.innerText = ""
   }
 }
+}
+
+
+function remover(){
+  dadek.removeEventListener('click', blok);
+  
 }

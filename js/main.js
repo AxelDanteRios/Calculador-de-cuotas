@@ -47,6 +47,11 @@ let th_tres = document.createElement("th");
 let th_cuatro = document.createElement("th");
 let btn_reset = document.createElement("button")
 
+let bek = true
+let dadek = document.querySelectorAll(".dados img")
+
+
+
 
 sonido_on.addEventListener("click",()=>{
     musica.play();
@@ -105,6 +110,8 @@ mode.addEventListener('click',()=>{
         th_total.style.color = "black"
         th_uno.style.color = "black"
         th_dos.style.color = "black"
+        th_tres.style.color = "black"
+        th_cuatro.style.color = "black"
         for(let i = 0; i < num_negro.length; i ++){
            num_negro[i].style.color = "black" 
         }
@@ -120,6 +127,8 @@ mode.addEventListener('click',()=>{
         th_total.style.color = "white"
          th_uno.style.color = "white"
         th_dos.style.color = "white"
+         th_tres.style.color = "white"
+        th_cuatro.style.color = "white"
         for(let i = 0; i < num_negro.length; i ++){
             num_negro[i].style.color = "white" 
          }
@@ -170,6 +179,7 @@ btn_usuario.addEventListener('click',()=>{
             if (cont_usuario == 2){
         formulario.style.display = "none"
         btn_turno.style.display = "block"
+        nombre_jugadores.style.display = "none"
         dado_uno.textContent = ""
         dado_dos.textContent = ""
         dado_tres.textContent = ""
@@ -185,6 +195,7 @@ btn_usuario.addEventListener('click',()=>{
         if (cont_usuario == 3){
     formulario.style.display = "none"
     btn_turno.style.display = "block"
+    nombre_jugadores.style.display = "none"
     dado_uno.textContent = ""
     dado_dos.textContent = ""
     dado_tres.textContent = ""
@@ -200,6 +211,7 @@ if (num_de_jugadores === 4){
     if (cont_usuario == 4){
 formulario.style.display = "none"
 btn_turno.style.display = "block"
+nombre_jugadores.style.display = "none"
 dado_uno.textContent = ""
 dado_dos.textContent = ""
 dado_tres.textContent = ""
@@ -215,6 +227,7 @@ rondas.innerText = "Rondas"
   
 btn_tirar.addEventListener('click',sumar_ronda)
 btn_tirar.addEventListener('click',()=>{
+        bek = true
         dado_uno.style.display = "block" 
         dado_dos.style.display = "block"
         dado_tres.style.display = "block"
@@ -274,8 +287,9 @@ blok(dado_tres)
 blok(dado_cuatro)
 blok(dado_cinco)
 
-desblok(dado_uno)
-desblok(dado_dos)
-desblok(dado_tres)
-desblok(dado_cuatro)
-desblok(dado_cinco)
+// desblok(dado_uno)
+// desblok(dado_dos)
+// desblok(dado_tres)
+// desblok(dado_cuatro)
+// desblok(dado_cinco)
+
