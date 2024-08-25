@@ -1941,6 +1941,7 @@ function turno(){
   tachar_num_dos(10, 2)
   tachar_num_dos(11, 2)
 
+  turno_de.innerText = "Turno de : " + j_uno.textContent
       btn_turno.addEventListener('click',()=>{
       bek = false
       dado_uno.style.color = "white"
@@ -1960,6 +1961,7 @@ function turno(){
     if(cont == 0){
     combos_ronda(tabla_uno, arr_uno)
     if (cont == 1){
+      turno_de.innerText = "Turno de : " + j_dos.textContent
  Toastify({
           text: "turno de " + j_dos.innerText,
           duration: 3000,
@@ -1986,6 +1988,7 @@ function turno(){
       cont = 0
     }
     if (cont == 0){
+      turno_de.innerText = "Turno de : " + j_uno.textContent
               Toastify({
           text: "turno de " + j_uno.innerText,
           duration: 3000,
@@ -2082,6 +2085,7 @@ function turno_tres(){
   tachar_num_tres(10, 3)
   tachar_num_tres(11, 3)
 
+  turno_de.innerText = "Turno de : " + j_uno.textContent
       btn_turno.addEventListener('click',()=>{
         bek = false
         dado_uno.style.color = "white"
@@ -2101,6 +2105,7 @@ function turno_tres(){
     if(cont == 0){
     combos_ronda(tabla_uno, arr_uno)
     if(cont == 1){
+      turno_de.innerText = "Turno de : " + j_dos.textContent
       Toastify({
           text: "turno de " + j_dos.innerText,
           duration: 3000,
@@ -2123,6 +2128,7 @@ function turno_tres(){
     else if (cont == 1){
     combos_ronda(tabla_dos, arr_dos)
     if(cont == 2){
+      turno_de.innerText = "Turno de : " + j_tres.textContent
               Toastify({
           text: "turno de " + j_tres.innerText,
           duration: 3000,
@@ -2147,6 +2153,7 @@ function turno_tres(){
         cont = 0
       }
       if(cont == 0){
+        turno_de.innerText = "Turno de : " + j_uno.textContent
     Toastify({
       text: "turno de " + j_uno.innerText,
       duration: 3000,
@@ -2281,6 +2288,7 @@ function turno_cuatro(){
   tachar_num_cuatro(10, 4)
   tachar_num_cuatro(11, 4)
 
+  turno_de.innerText = "Turno de : " + j_uno.textContent
       btn_turno.addEventListener('click',()=>{
         bek = false
         dado_uno.style.color = "white"
@@ -2299,6 +2307,7 @@ function turno_cuatro(){
     if(cont == 0){
     combos_ronda(tabla_uno, arr_uno)
     if(cont == 1){
+      turno_de.innerText = "Turno de : " + j_dos.textContent
       Toastify({
           text: "turno de " + j_dos.innerText,
           duration: 3000,
@@ -2321,6 +2330,7 @@ function turno_cuatro(){
     else if (cont == 1){
     combos_ronda(tabla_dos, arr_dos)
     if(cont == 2){
+      turno_de.innerText = "Turno de : " + j_tres.textContent
               Toastify({
           text: "turno de " + j_tres.innerText,
           duration: 3000,
@@ -2342,6 +2352,7 @@ function turno_cuatro(){
     else if(cont == 2){
       combos_ronda(tabla_tres, arr_tres)
       if(cont == 3){
+        turno_de.innerText = "Turno de : " + j_cuatro.textContent
     Toastify({
       text: "turno de " + j_cuatro.innerText,
       duration: 3000,
@@ -2367,6 +2378,7 @@ function turno_cuatro(){
         cont = 0
       }
       if(cont == 0){
+        turno_de.innerText = "Turno de : " + j_uno.textContent
     Toastify({
       text: "turno de " + j_uno.innerText,
       duration: 3000,
@@ -2586,6 +2598,7 @@ function agregar_jugador() {
             j_dos.innerText = players[1] || "J2"
             
         user.innerText = "Jugador 2"
+        turno_de.innerText = "Turno de : " + j_uno.textContent
     })
     turno()
   }
@@ -2608,6 +2621,7 @@ function agregar_jugador() {
           j_tres.innerText = players[2] || "J3"
           
       user.innerText = "Jugador 2"
+      turno_de.innerText = "Turno de : " + j_uno.textContent
       formulario.addEventListener('submit',(e)=>{
         e.preventDefault()
         user.innerText = "Jugador 3"
@@ -2631,6 +2645,7 @@ function agregar_jugador() {
           j_cuatro.innerText = players[3] || "J4"
           
       user.innerText = "Jugador 2"
+      turno_de.innerText = "Turno de : " + j_uno.textContent
       formulario.addEventListener('submit',(e)=>{
         e.preventDefault()
         user.innerText = "Jugador 3"

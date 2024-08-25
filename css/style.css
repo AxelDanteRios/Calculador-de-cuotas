@@ -522,6 +522,13 @@ top: 20px
   cursor: pointer;
 }
 
+.turnoDe{
+  display: none;
+  position: absolute;
+    top: 27rem;
+    left: 17%;
+    font-size: large;
+}
 
 
 
@@ -532,8 +539,18 @@ font-size: medium;
 }
 
 body{
-  height: 95vh;
+  height: 93vh;
 }
+
+.turnoDe{
+  display: none;
+  position: absolute;
+  top: 21rem;
+  left: 2%;
+  font-size: large;
+}
+
+
 
 .form_num label{
   font-size: 2rem;
@@ -562,7 +579,7 @@ body{
 }
 
 .boton div {
-  width: 15%;
+  width: 16%;
 }
 
 .dados {
@@ -581,7 +598,7 @@ body{
 }
 
 .tirar{
-  top: 41%;
+  top: 38%;
   width: 88px;
 }
 

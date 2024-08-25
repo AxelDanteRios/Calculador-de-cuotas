@@ -46,7 +46,7 @@ let th_dos = document.createElement("th");
 let th_tres = document.createElement("th");
 let th_cuatro = document.createElement("th");
 let btn_reset = document.createElement("button")
-
+let turno_de = document.querySelector(".turnoDe")
 let bek = true
 let dadek = document.querySelectorAll(".dados img")
 
@@ -177,6 +177,7 @@ btn_usuario.addEventListener('click',()=>{
 
     if (num_de_jugadores === 2){
             if (cont_usuario == 2){
+        turno_de.style.display = "flex"
         formulario.style.display = "none"
         btn_turno.style.display = "block"
         nombre_jugadores.style.display = "none"
@@ -193,6 +194,7 @@ btn_usuario.addEventListener('click',()=>{
     }
     if (num_de_jugadores === 3){
         if (cont_usuario == 3){
+    turno_de.style.display = "flex"
     formulario.style.display = "none"
     btn_turno.style.display = "block"
     nombre_jugadores.style.display = "none"
@@ -209,6 +211,7 @@ btn_usuario.addEventListener('click',()=>{
 }
 if (num_de_jugadores === 4){
     if (cont_usuario == 4){
+turno_de.style.display = "flex"
 formulario.style.display = "none"
 btn_turno.style.display = "block"
 nombre_jugadores.style.display = "none"
