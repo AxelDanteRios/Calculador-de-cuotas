@@ -1128,6 +1128,7 @@ function tachar_num_uno(n, m){
         cont = 0
       }
       if(n == 7){
+        turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
           text: "te borraste la escalera es el turno turno de " + j_dos.innerText,
           duration: 3000,
@@ -1138,13 +1139,12 @@ function tachar_num_uno(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 8){
+        turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
           text: "te borraste el full es el turno turno de " + j_dos.innerText,
           duration: 3000,
@@ -1155,13 +1155,12 @@ function tachar_num_uno(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 9){
+        turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
           text: "te borraste el poker es el turno turno de " + j_dos.innerText,
           duration: 3000,
@@ -1172,13 +1171,12 @@ function tachar_num_uno(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 10){
+        turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
           text: "te borraste la generala es el turno turno de " + j_dos.innerText,
           duration: 3000,
@@ -1189,13 +1187,12 @@ function tachar_num_uno(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 11){
+        turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
           text: "te borraste la generala doble es el turno turno de " + j_dos.innerText,
           duration: 3000,
@@ -1206,16 +1203,15 @@ function tachar_num_uno(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else{
+        turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
         text: "te borraste el " + `${n}` + " turno de " + j_dos.innerText,
-        duration: 3000,
+        duration: 10000,
         newWindow: true,
         close: true,
         gravity: "top", // `top` or `bottom`
@@ -1223,8 +1219,6 @@ function tachar_num_uno(n, m){
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
             color: "black",
-            width: "10%",
-            height: "10%",
           background: "linear-gradient(to right, #f700ff, #78cdff)",
         },
       }).showToast(); 
@@ -1279,7 +1273,7 @@ function tachar_num_uno(n, m){
 })
 }
 
-function tachar_num_dos(n, m){
+function tachar_num_dos(n, m, j){
   tabla_dos.children[n].addEventListener('click',()=>{
     document.querySelector(".tirar").disabled = false
     if (tabla_dos.children[n].innerText != ""){
@@ -1305,8 +1299,9 @@ function tachar_num_dos(n, m){
         cont = 0
       }
       if(n == 7){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la escalera es el turno de " + j_uno.innerText,
+          text: "te borraste la escalera es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1315,15 +1310,14 @@ function tachar_num_dos(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 8){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el full es el turno de " + j_uno.innerText,
+          text: "te borraste el full es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1332,15 +1326,14 @@ function tachar_num_dos(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 9){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el poker es el turno de " + j_uno.innerText,
+          text: "te borraste el poker es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1349,15 +1342,14 @@ function tachar_num_dos(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 10){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala es el turno de " + j_uno.innerText,
+          text: "te borraste la generala es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1366,15 +1358,14 @@ function tachar_num_dos(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 11){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala doble es el turno de " + j_uno.innerText,
+          text: "te borraste la generala doble es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1383,15 +1374,14 @@ function tachar_num_dos(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else{
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-        text: "te borraste el " + `${n}` + " turno de " + j_uno.innerText,
+        text: "te borraste el " + `${n}` + " turno de " + j.innerText,
         duration: 3000,
         newWindow: true,
         close: true,
@@ -1400,8 +1390,6 @@ function tachar_num_dos(n, m){
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
             color: "black",
-            width: "10%",
-            height: "10%",
           background: "linear-gradient(to right, #f700ff, #78cdff)",
         },
       }).showToast(); 
@@ -1453,7 +1441,7 @@ function tachar_num_dos(n, m){
     })
 }
 
-function tachar_num_tres(n, m){
+function tachar_num_tres(n, m, j){
   tabla_tres.children[n].addEventListener('click',()=>{
     document.querySelector(".tirar").disabled = false
     if (tabla_tres.children[n].innerText != ""){
@@ -1479,8 +1467,9 @@ function tachar_num_tres(n, m){
         cont = 0
       }
       if(n == 7){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la escalera es el turno turno de " + j_tres.innerText,
+          text: "te borraste la escalera es el turno turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1489,15 +1478,14 @@ function tachar_num_tres(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 8){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el full es el turno de " + j_uno.innerText,
+          text: "te borraste el full es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1506,15 +1494,14 @@ function tachar_num_tres(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 9){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el poker es el turno de " + j_uno.innerText,
+          text: "te borraste el poker es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1523,15 +1510,14 @@ function tachar_num_tres(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 10){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala es el turno de " + j_uno.innerText,
+          text: "te borraste la generala es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1540,15 +1526,14 @@ function tachar_num_tres(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 11){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala doble es el turno de " + j_uno.innerText,
+          text: "te borraste la generala doble es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1557,15 +1542,14 @@ function tachar_num_tres(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else{
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-        text: "te borraste el " + `${n}` + " turno de " + j_uno.innerText,
+        text: "te borraste el " + `${n}` + " turno de " + j.innerText,
         duration: 3000,
         newWindow: true,
         close: true,
@@ -1574,8 +1558,6 @@ function tachar_num_tres(n, m){
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
             color: "black",
-            width: "10%",
-            height: "10%",
           background: "linear-gradient(to right, #f700ff, #78cdff)",
         },
       }).showToast(); 
@@ -1663,7 +1645,7 @@ function tachar_num_tres(n, m){
 })
 }
 
-function tachar_num_cuatro(n, m){
+function tachar_num_cuatro(n, m, j){
   tabla_cuatro.children[n].addEventListener('click',()=>{
     document.querySelector(".tirar").disabled = false
     if (tabla_cuatro.children[n].innerText != ""){
@@ -1689,8 +1671,9 @@ function tachar_num_cuatro(n, m){
         cont = 0
       }
       if(n == 7){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la escalera es el turno de " + j_uno.innerText,
+          text: "te borraste la escalera es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1699,15 +1682,14 @@ function tachar_num_cuatro(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 8){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el full es el turno de " + j_uno.innerText,
+          text: "te borraste el full es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1716,15 +1698,14 @@ function tachar_num_cuatro(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 9){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el poker es el turno de " + j_uno.innerText,
+          text: "te borraste el poker es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1733,15 +1714,14 @@ function tachar_num_cuatro(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 10){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala es el turno de " + j_uno.innerText,
+          text: "te borraste la generala es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1750,15 +1730,14 @@ function tachar_num_cuatro(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else if(n == 11){
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala doble es el turno de " + j_uno.innerText,
+          text: "te borraste la generala doble es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1767,15 +1746,14 @@ function tachar_num_cuatro(n, m){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast(); 
       }
       else{
+        turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-        text: "te borraste el " + `${n}` + " turno de " + j_uno.innerText,
+        text: "te borraste el " + `${n}` + " turno de " + j.innerText,
         duration: 3000,
         newWindow: true,
         close: true,
@@ -1784,8 +1762,6 @@ function tachar_num_cuatro(n, m){
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
             color: "black",
-            width: "10%",
-            height: "10%",
           background: "linear-gradient(to right, #f700ff, #78cdff)",
         },
       }).showToast(); 
@@ -1929,17 +1905,17 @@ function turno(){
   tachar_num_uno(10, 2)
   tachar_num_uno(11, 2)
 
-  tachar_num_dos(1, 2)
-  tachar_num_dos(2, 2)
-  tachar_num_dos(3, 2)
-  tachar_num_dos(4, 2)
-  tachar_num_dos(5, 2)
-  tachar_num_dos(6, 2)
-  tachar_num_dos(7, 2)
-  tachar_num_dos(8, 2)
-  tachar_num_dos(9, 2)
-  tachar_num_dos(10, 2)
-  tachar_num_dos(11, 2)
+  tachar_num_dos(1, 2, j_uno)
+  tachar_num_dos(2, 2, j_uno)
+  tachar_num_dos(3, 2, j_uno)
+  tachar_num_dos(4, 2, j_uno)
+  tachar_num_dos(5, 2, j_uno)
+  tachar_num_dos(6, 2, j_uno)
+  tachar_num_dos(7, 2, j_uno)
+  tachar_num_dos(8, 2, j_uno)
+  tachar_num_dos(9, 2, j_uno)
+  tachar_num_dos(10, 2, j_uno)
+  tachar_num_dos(11, 2, j_uno)
 
   turno_de.innerText = "Turno de : " + j_uno.textContent
       btn_turno.addEventListener('click',()=>{
@@ -1972,8 +1948,6 @@ function turno(){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast();
@@ -1999,8 +1973,6 @@ function turno(){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast();
@@ -2061,29 +2033,29 @@ function turno_tres(){
   tachar_num_uno(10, 3)
   tachar_num_uno(11, 3)
 
-  tachar_num_dos(1, 3)
-  tachar_num_dos(2, 3)
-  tachar_num_dos(3, 3)
-  tachar_num_dos(4, 3)
-  tachar_num_dos(5, 3)
-  tachar_num_dos(6, 3)
-  tachar_num_dos(7, 3)
-  tachar_num_dos(8, 3)
-  tachar_num_dos(9, 3)
-  tachar_num_dos(10, 3)
-  tachar_num_dos(11, 3)
+  tachar_num_dos(1, 3, j_tres)
+  tachar_num_dos(2, 3, j_tres)
+  tachar_num_dos(3, 3, j_tres)
+  tachar_num_dos(4, 3, j_tres)
+  tachar_num_dos(5, 3, j_tres)
+  tachar_num_dos(6, 3, j_tres)
+  tachar_num_dos(7, 3, j_tres)
+  tachar_num_dos(8, 3, j_tres)
+  tachar_num_dos(9, 3, j_tres)
+  tachar_num_dos(10, 3, j_tres)
+  tachar_num_dos(11, 3, j_tres)
 
-  tachar_num_tres(1, 3)
-  tachar_num_tres(2, 3)
-  tachar_num_tres(3, 3)
-  tachar_num_tres(4, 3)
-  tachar_num_tres(5, 3)
-  tachar_num_tres(6, 3)
-  tachar_num_tres(7, 3)
-  tachar_num_tres(8, 3)
-  tachar_num_tres(9, 3)
-  tachar_num_tres(10, 3)
-  tachar_num_tres(11, 3)
+  tachar_num_tres(1, 3, j_uno)
+  tachar_num_tres(2, 3, j_uno)
+  tachar_num_tres(3, 3, j_uno)
+  tachar_num_tres(4, 3, j_uno)
+  tachar_num_tres(5, 3, j_uno)
+  tachar_num_tres(6, 3, j_uno)
+  tachar_num_tres(7, 3, j_uno)
+  tachar_num_tres(8, 3, j_uno)
+  tachar_num_tres(9, 3, j_uno)
+  tachar_num_tres(10, 3, j_uno)
+  tachar_num_tres(11, 3, j_uno)
 
   turno_de.innerText = "Turno de : " + j_uno.textContent
       btn_turno.addEventListener('click',()=>{
@@ -2116,8 +2088,6 @@ function turno_tres(){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast();
@@ -2139,8 +2109,6 @@ function turno_tres(){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast();
@@ -2164,8 +2132,6 @@ function turno_tres(){
       stopOnFocus: true, // Prevents dismissing of toast on hover
       style: {
           color: "black",
-          width: "10%",
-          height: "10%",
         background: "linear-gradient(to right, #f700ff, #78cdff)",
       },
     }).showToast();
@@ -2252,41 +2218,41 @@ function turno_cuatro(){
   tachar_num_uno(10, 4)
   tachar_num_uno(11, 4)
 
-  tachar_num_dos(1, 4)
-  tachar_num_dos(2, 4)
-  tachar_num_dos(3, 4)
-  tachar_num_dos(4, 4)
-  tachar_num_dos(5, 4)
-  tachar_num_dos(6, 4)
-  tachar_num_dos(7, 4)
-  tachar_num_dos(8, 4)
-  tachar_num_dos(9, 4)
-  tachar_num_dos(10, 4)
-  tachar_num_dos(11, 4)
+  tachar_num_dos(1, 4, j_tres)
+  tachar_num_dos(2, 4, j_tres)
+  tachar_num_dos(3, 4, j_tres)
+  tachar_num_dos(4, 4, j_tres)
+  tachar_num_dos(5, 4, j_tres)
+  tachar_num_dos(6, 4, j_tres)
+  tachar_num_dos(7, 4, j_tres)
+  tachar_num_dos(8, 4, j_tres)
+  tachar_num_dos(9, 4, j_tres)
+  tachar_num_dos(10, 4, j_tres)
+  tachar_num_dos(11, 4, j_tres)
 
-  tachar_num_tres(1, 4)
-  tachar_num_tres(2, 4)
-  tachar_num_tres(3, 4)
-  tachar_num_tres(4, 4)
-  tachar_num_tres(5, 4)
-  tachar_num_tres(6, 4)
-  tachar_num_tres(7, 4)
-  tachar_num_tres(8, 4)
-  tachar_num_tres(9, 4)
-  tachar_num_tres(10, 4)
-  tachar_num_tres(11, 4)
+  tachar_num_tres(1, 4, j_cuatro)
+  tachar_num_tres(2, 4, j_cuatro)
+  tachar_num_tres(3, 4, j_cuatro)
+  tachar_num_tres(4, 4, j_cuatro)
+  tachar_num_tres(5, 4, j_cuatro)
+  tachar_num_tres(6, 4, j_cuatro)
+  tachar_num_tres(7, 4, j_cuatro)
+  tachar_num_tres(8, 4, j_cuatro)
+  tachar_num_tres(9, 4, j_cuatro)
+  tachar_num_tres(10, 4, j_cuatro)
+  tachar_num_tres(11, 4, j_cuatro)
 
-  tachar_num_cuatro(1, 4)
-  tachar_num_cuatro(2, 4)
-  tachar_num_cuatro(3, 4)
-  tachar_num_cuatro(4, 4)
-  tachar_num_cuatro(5, 4)
-  tachar_num_cuatro(6, 4)
-  tachar_num_cuatro(7, 4)
-  tachar_num_cuatro(8, 4)
-  tachar_num_cuatro(9, 4)
-  tachar_num_cuatro(10, 4)
-  tachar_num_cuatro(11, 4)
+  tachar_num_cuatro(1, 4, j_uno)
+  tachar_num_cuatro(2, 4, j_uno)
+  tachar_num_cuatro(3, 4, j_uno)
+  tachar_num_cuatro(4, 4, j_uno)
+  tachar_num_cuatro(5, 4, j_uno)
+  tachar_num_cuatro(6, 4, j_uno)
+  tachar_num_cuatro(7, 4, j_uno)
+  tachar_num_cuatro(8, 4, j_uno)
+  tachar_num_cuatro(9, 4, j_uno)
+  tachar_num_cuatro(10, 4, j_uno)
+  tachar_num_cuatro(11, 4, j_uno)
 
   turno_de.innerText = "Turno de : " + j_uno.textContent
       btn_turno.addEventListener('click',()=>{
@@ -2318,8 +2284,6 @@ function turno_cuatro(){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast();
@@ -2341,8 +2305,6 @@ function turno_cuatro(){
           stopOnFocus: true, // Prevents dismissing of toast on hover
           style: {
               color: "black",
-              width: "10%",
-              height: "10%",
             background: "linear-gradient(to right, #f700ff, #78cdff)",
           },
         }).showToast();
@@ -2363,8 +2325,6 @@ function turno_cuatro(){
       stopOnFocus: true, // Prevents dismissing of toast on hover
       style: {
           color: "black",
-          width: "10%",
-          height: "10%",
         background: "linear-gradient(to right, #f700ff, #78cdff)",
       },
     }).showToast();
@@ -2389,8 +2349,6 @@ function turno_cuatro(){
       stopOnFocus: true, // Prevents dismissing of toast on hover
       style: {
           color: "black",
-          width: "10%",
-          height: "10%",
         background: "linear-gradient(to right, #f700ff, #78cdff)",
       },
     }).showToast();
@@ -2742,7 +2700,7 @@ for (let j = 0; j < fila.cells.length; j++){
 }
 
 
-function remover(){
-  dadek.removeEventListener('click', blok);
+// function remover(){
+//   dadek.removeEventListener('click', blok);
   
-}
+// }

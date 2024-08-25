@@ -545,12 +545,14 @@ body{
 .turnoDe{
   display: none;
   position: absolute;
-  top: 21rem;
+  top: 27rem;
   left: 2%;
   font-size: large;
 }
 
-
+.cant_jugadores {
+  width: 75%;
+}
 
 .form_num label{
   font-size: 2rem;
@@ -575,7 +577,7 @@ body{
   border-radius: 42px;
   padding: 20px 0px;
   font-size: 20px;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .boton div {
