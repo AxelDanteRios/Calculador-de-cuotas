@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   /* position: relative; */
-  height: 46rem;
+  height: 98vh;
   flex-wrap: nowrap;  
   overflow: hidden;
   }
@@ -531,12 +531,20 @@ ul {
 font-size: medium;
 }
 
-body{
+/* body{
   height: 40rem;
-}
+} */
 
 .form_num label{
   font-size: 2rem;
+}
+
+.form_nom label{
+  font-size: 2rem;
+}
+
+.form_nom #nombre{
+  width: 70%;
 }
 
 .aclaracion{
@@ -549,7 +557,8 @@ body{
 .comic-button {
   border-radius: 42px;
   padding: 20px 0px;
-  font-size: 24px;
+  font-size: 20px;
+  margin-top: 1rem;
 }
 
 .boton div {
@@ -597,7 +606,7 @@ body{
 }
 
 .burbujas span {
-  height: 15px;
+  height: 14px;
 }
 
 }
