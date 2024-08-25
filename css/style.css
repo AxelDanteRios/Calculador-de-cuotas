@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   /* position: relative; */
-  height: 98vh;
+  height: 46rem;
   flex-wrap: nowrap;  
   overflow: hidden;
   }
@@ -525,9 +525,19 @@ top: 20px
 
 
 
-@media (max-width:550px) {
+@media (max-width:480px) {
 
+ul {
+font-size: medium;
+}
 
+body{
+  height: 40rem;
+}
+
+.form_num label{
+  font-size: 2rem;
+}
 
 .aclaracion{
   display: none;
@@ -543,12 +553,12 @@ top: 20px
 }
 
 .boton div {
-  width: 12%;
+  width: 15%;
 }
 
 .dados {
   width: 94%;
-  height: 13%;
+  height: 4rem;
   position: absolute;
   top: 23%;
 }
@@ -587,7 +597,7 @@ top: 20px
 }
 
 .burbujas span {
-  height: 18px;
+  height: 15px;
 }
 
 }
