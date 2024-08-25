@@ -531,9 +531,9 @@ ul {
 font-size: medium;
 }
 
-/* body{
-  height: 40rem;
-} */
+body{
+  height: 95vh;
+}
 
 .form_num label{
   font-size: 2rem;
@@ -551,14 +551,14 @@ font-size: medium;
   display: none;
 }
 .reglas{
-  top: 14%;
+  top: 17%;
 }
 
 .comic-button {
   border-radius: 42px;
   padding: 20px 0px;
   font-size: 20px;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .boton div {
@@ -606,7 +606,7 @@ font-size: medium;
 }
 
 .burbujas span {
-  height: 14px;
+  height: 13px;
 }
 
 }
