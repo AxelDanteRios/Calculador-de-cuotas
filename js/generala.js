@@ -1130,7 +1130,7 @@ function tachar_num_uno(n, m){
       if(n == 7){
         turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
-          text: "te borraste la escalera es el turno turno de " + j_dos.innerText,
+          text: "Te borraste la escalera es el turno turno de " + j_dos.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1146,7 +1146,7 @@ function tachar_num_uno(n, m){
       else if(n == 8){
         turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
-          text: "te borraste el full es el turno turno de " + j_dos.innerText,
+          text: "Te borraste el full es el turno turno de " + j_dos.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1162,7 +1162,7 @@ function tachar_num_uno(n, m){
       else if(n == 9){
         turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
-          text: "te borraste el poker es el turno turno de " + j_dos.innerText,
+          text: "Te borraste el poker es el turno turno de " + j_dos.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1178,7 +1178,7 @@ function tachar_num_uno(n, m){
       else if(n == 10){
         turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
-          text: "te borraste la generala es el turno turno de " + j_dos.innerText,
+          text: "Te borraste la generala es el turno turno de " + j_dos.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1194,7 +1194,7 @@ function tachar_num_uno(n, m){
       else if(n == 11){
         turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
-          text: "te borraste la generala doble es el turno turno de " + j_dos.innerText,
+          text: "Te borraste la generala doble es el turno turno de " + j_dos.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1210,8 +1210,8 @@ function tachar_num_uno(n, m){
       else{
         turno_de.innerText = "Turno de : " + j_dos.textContent
         Toastify({
-        text: "te borraste el " + `${n}` + " turno de " + j_dos.innerText,
-        duration: 10000,
+        text: "Te borraste el " + `${n}` + " turno de " + j_dos.innerText,
+        duration: 3000,
         newWindow: true,
         close: true,
         gravity: "top", // `top` or `bottom`
@@ -1301,7 +1301,7 @@ function tachar_num_dos(n, m, j){
       if(n == 7){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la escalera es el turno de " + j.innerText,
+          text: "Te borraste la escalera es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1317,7 +1317,7 @@ function tachar_num_dos(n, m, j){
       else if(n == 8){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el full es el turno de " + j.innerText,
+          text: "Te borraste el full es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1333,7 +1333,7 @@ function tachar_num_dos(n, m, j){
       else if(n == 9){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el poker es el turno de " + j.innerText,
+          text: "Te borraste el poker es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1349,7 +1349,7 @@ function tachar_num_dos(n, m, j){
       else if(n == 10){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala es el turno de " + j.innerText,
+          text: "Te borraste la generala es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1365,7 +1365,7 @@ function tachar_num_dos(n, m, j){
       else if(n == 11){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala doble es el turno de " + j.innerText,
+          text: "Te borraste la generala doble es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1381,7 +1381,7 @@ function tachar_num_dos(n, m, j){
       else{
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-        text: "te borraste el " + `${n}` + " turno de " + j.innerText,
+        text: "Te borraste el " + `${n}` + " turno de " + j.innerText,
         duration: 3000,
         newWindow: true,
         close: true,
@@ -1469,7 +1469,7 @@ function tachar_num_tres(n, m, j){
       if(n == 7){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la escalera es el turno turno de " + j.innerText,
+          text: "Te borraste la escalera es el turno turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1485,7 +1485,7 @@ function tachar_num_tres(n, m, j){
       else if(n == 8){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el full es el turno de " + j.innerText,
+          text: "Te borraste el full es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1501,7 +1501,7 @@ function tachar_num_tres(n, m, j){
       else if(n == 9){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el poker es el turno de " + j.innerText,
+          text: "Te borraste el poker es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1517,7 +1517,7 @@ function tachar_num_tres(n, m, j){
       else if(n == 10){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala es el turno de " + j.innerText,
+          text: "Te borraste la generala es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1533,7 +1533,7 @@ function tachar_num_tres(n, m, j){
       else if(n == 11){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala doble es el turno de " + j.innerText,
+          text: "Te borraste la generala doble es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1549,7 +1549,7 @@ function tachar_num_tres(n, m, j){
       else{
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-        text: "te borraste el " + `${n}` + " turno de " + j.innerText,
+        text: "Te borraste el " + `${n}` + " turno de " + j.innerText,
         duration: 3000,
         newWindow: true,
         close: true,
@@ -1673,7 +1673,7 @@ function tachar_num_cuatro(n, m, j){
       if(n == 7){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la escalera es el turno de " + j.innerText,
+          text: "Te borraste la escalera es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1689,7 +1689,7 @@ function tachar_num_cuatro(n, m, j){
       else if(n == 8){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el full es el turno de " + j.innerText,
+          text: "Te borraste el full es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1705,7 +1705,7 @@ function tachar_num_cuatro(n, m, j){
       else if(n == 9){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste el poker es el turno de " + j.innerText,
+          text: "Te borraste el poker es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1721,7 +1721,7 @@ function tachar_num_cuatro(n, m, j){
       else if(n == 10){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala es el turno de " + j.innerText,
+          text: "Te borraste la generala es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1737,7 +1737,7 @@ function tachar_num_cuatro(n, m, j){
       else if(n == 11){
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-          text: "te borraste la generala doble es el turno de " + j.innerText,
+          text: "Te borraste la generala doble es el turno de " + j.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1753,7 +1753,7 @@ function tachar_num_cuatro(n, m, j){
       else{
         turno_de.innerText = "Turno de : " + j.textContent
         Toastify({
-        text: "te borraste el " + `${n}` + " turno de " + j.innerText,
+        text: "Te borraste el " + `${n}` + " turno de " + j.innerText,
         duration: 3000,
         newWindow: true,
         close: true,
@@ -1939,7 +1939,7 @@ function turno(){
     if (cont == 1){
       turno_de.innerText = "Turno de : " + j_dos.textContent
  Toastify({
-          text: "turno de " + j_dos.innerText,
+          text: "Turno de " + j_dos.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1964,7 +1964,7 @@ function turno(){
     if (cont == 0){
       turno_de.innerText = "Turno de : " + j_uno.textContent
               Toastify({
-          text: "turno de " + j_uno.innerText,
+          text: "Turno de " + j_uno.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -1994,7 +1994,6 @@ function turno(){
         }
         else if (total_jugadores(arr_dos) == total_jugadores(arr_uno)){
             Swal.fire("Empataron");
-
             btn_reset.textContent = "volver a jugar"
             btn_turno.replaceWith(btn_reset)
             btn_reset.classList.add("btn_reset")
@@ -2079,7 +2078,7 @@ function turno_tres(){
     if(cont == 1){
       turno_de.innerText = "Turno de : " + j_dos.textContent
       Toastify({
-          text: "turno de " + j_dos.innerText,
+          text: "Turno de " + j_dos.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -2100,7 +2099,7 @@ function turno_tres(){
     if(cont == 2){
       turno_de.innerText = "Turno de : " + j_tres.textContent
               Toastify({
-          text: "turno de " + j_tres.innerText,
+          text: "Turno de " + j_tres.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -2123,7 +2122,7 @@ function turno_tres(){
       if(cont == 0){
         turno_de.innerText = "Turno de : " + j_uno.textContent
     Toastify({
-      text: "turno de " + j_uno.innerText,
+      text: "Turno de " + j_uno.innerText,
       duration: 3000,
       newWindow: true,
       close: true,
@@ -2275,7 +2274,7 @@ function turno_cuatro(){
     if(cont == 1){
       turno_de.innerText = "Turno de : " + j_dos.textContent
       Toastify({
-          text: "turno de " + j_dos.innerText,
+          text: "Turno de " + j_dos.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -2296,7 +2295,7 @@ function turno_cuatro(){
     if(cont == 2){
       turno_de.innerText = "Turno de : " + j_tres.textContent
               Toastify({
-          text: "turno de " + j_tres.innerText,
+          text: "Turno de " + j_tres.innerText,
           duration: 3000,
           newWindow: true,
           close: true,
@@ -2316,7 +2315,7 @@ function turno_cuatro(){
       if(cont == 3){
         turno_de.innerText = "Turno de : " + j_cuatro.textContent
     Toastify({
-      text: "turno de " + j_cuatro.innerText,
+      text: "Turno de " + j_cuatro.innerText,
       duration: 3000,
       newWindow: true,
       close: true,
@@ -2340,7 +2339,7 @@ function turno_cuatro(){
       if(cont == 0){
         turno_de.innerText = "Turno de : " + j_uno.textContent
     Toastify({
-      text: "turno de " + j_uno.innerText,
+      text: "Turno de " + j_uno.innerText,
       duration: 3000,
       newWindow: true,
       close: true,
@@ -2432,8 +2431,6 @@ function turno_cuatro(){
     }
     })
 }
-
-
 
 
 function blok(dado){
@@ -2619,45 +2616,50 @@ function agregar_jugador() {
 }
     
 function resetear(){
-    cont_usuario = 0 
-    cont = 0
-    reiniciarTabla()
-    tachar_num_uno = []
-    cantidad_jugadores.style.display = "flex"
-    cantidad_players[0].style.color = "white"
-    cantidad_players[1].style.color = "white"
-    cantidad_players[2].style.color = "white"
-    user.innerText = "Jugador 1"
-    btn_jug.disabled = true;
-    btn_jug.addEventListener('click',()=>[
-      formulario.style.display = "flex"
-    ])
+  window.location.reload()
+    // cont_usuario = 0 
+    // cont = 0
+    // num_de_jugadores = 0
+    // reiniciarTabla()
+  
+    // // tachar_num_uno = []
+    // cantidad_jugadores.style.display = "flex"
+    // cantidad_players[0].style.color = "white"
+    // cantidad_players[1].style.color = "white"
+    // cantidad_players[2].style.color = "white"
+    // user.innerText = "Jugador 1"
+    // btn_jug.disabled = true;
+    // btn_jug.addEventListener('click',()=>[
+    //   formulario.style.display = "flex",
+    //   agregar_jugador()
+    // ])
     
-    btn_turno.style.display = "none"
-    players.length = 0
-    arr_uno.length = 0
-    arr_dos.length = 0
-    arr_tres.length = 0
-    arr_cuatro.length = 0
-    dado_uno.style.display = "none"
-    dado_dos.style.display = "none"
-    dado_tres.style.display = "none"
-    dado_cuatro.style.display = "none"
-    dado_cinco.style.display = "none"
-    anotador.style.display = "none"
-    btn_tirar.style.display = "none"
-    rondas.style.display = "none"
-    document.querySelector(".tirar").disabled = false
-    numeros_tabla.children[12].remove()
-    tabla_uno.children[12].remove()
-    tabla_dos.children[12].remove()
-    if(num_de_jugadores === 3){
-      tabla_tres.children[12].remove()
-    }
-    if(num_de_jugadores === 4){
-     tabla_tres.children[12].remove()
-     tabla_cuatro.children[12].remove()
-    }
+    // btn_turno.style.display = "none"
+    // players.length = 0
+    // arr_uno.length = 0
+    // arr_dos.length = 0
+    // arr_tres.length = 0
+    // arr_cuatro.length = 0
+    // turno_de.style.display = "none"
+    // dado_uno.style.display = "none"
+    // dado_dos.style.display = "none"
+    // dado_tres.style.display = "none"
+    // dado_cuatro.style.display = "none"
+    // dado_cinco.style.display = "none"
+    // anotador.style.display = "none"
+    // btn_tirar.style.display = "none"
+    // rondas.style.display = "none"
+    // document.querySelector(".tirar").disabled = false
+    // numeros_tabla.children[12].remove()
+    // tabla_uno.children[12].remove()
+    // tabla_dos.children[12].remove()
+    // if(num_de_jugadores === 3){
+    //   tabla_tres.children[12].remove()
+    // }
+    // if(num_de_jugadores === 4){
+    //  tabla_tres.children[12].remove()
+    //  tabla_cuatro.children[12].remove()
+    // }
     
     
     // agregar_jugador()
@@ -2686,18 +2688,18 @@ function blanquear_dados(){
 }
 
 
-function reiniciarTabla(){
-let tabla = document.querySelector("table")
+// function reiniciarTabla(){
+// let tabla = document.querySelector("table")
 
-for (let i =1; i < tabla.rows.length; i++){
+// for (let i =1; i < tabla.rows.length; i++){
 
-let fila = tabla.rows[i];
-for (let j = 0; j < fila.cells.length; j++){
-  let celda = fila.cells[j];
-  celda.innerText = ""
-  }
-}
-}
+// let fila = tabla.rows[i];
+// for (let j = 0; j < fila.cells.length; j++){
+//   let celda = fila.cells[j];
+//   celda.innerText = ""
+//   }
+// }
+// }
 
 
 // function remover(){

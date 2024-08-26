@@ -102,6 +102,7 @@ mode.addEventListener('click',()=>{
 
     if (modo_body == 'bg_dark'){
         document.body.classList.value = 'bg_light'
+        turno_de.style.color = "black"
         rondas.style.color = "black"
         sonido_on.style.color = "black"
         sonido_off.style.color = "black"
@@ -119,6 +120,7 @@ mode.addEventListener('click',()=>{
     }
     else{
         document.body.classList.value = 'bg_dark'
+        turno_de.style.color = "white"
         rondas.style.color = "white"
         sonido_on.style.color = "white"
         sonido_off.style.color = "white"

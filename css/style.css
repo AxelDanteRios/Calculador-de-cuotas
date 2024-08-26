@@ -513,7 +513,7 @@ th{
 
 .btn_reset{
  position : relative;
-top: 20px
+top: 4em
 }
 
 
@@ -539,7 +539,7 @@ font-size: medium;
 }
 
 body{
-  height: 93vh;
+  height: 92vh;
 }
 
 .turnoDe{
